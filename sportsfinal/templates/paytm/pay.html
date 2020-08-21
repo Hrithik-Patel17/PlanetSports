@@ -1,0 +1,352 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="{% static '/sportsfinal/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static '/sportsfinal/css/style.css' %}">
+	<!-- CSS -->
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fontawesome-all.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/slick-slider.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fancybox.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/smartmenus.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/color.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/responsive.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Payment Home</title>
+
+    <style>
+
+
+h2{
+    text-align: center;
+}
+
+.custm-btn-style{
+float: left;
+width: 100%;
+background-color: transparent;
+border: 1px solid;
+font-size: 16px;
+font-weight: bold;
+padding: 15px 25px;
+line-height: 1;
+text-transform: uppercase;
+border-radius: 5px;
+cursor: pointer;
+}
+.custm-cricket-bg{
+background:url(/static/sportsfinal/css/extra-images/7500.jpg)no-repeat;
+background-size: cover;
+background-attachment:fixed;
+}	
+.ritekhed-login-box{
+background-color:hotpink;
+}
+.custm-table{
+	background-color:hotpink;
+	
+}
+    </style>
+</head>
+<body class="Home">
+
+    <!-- Header -->
+    <div id="ritekhed-header" class="ritekhed-header-one">
+        
+        <!-- Top Strip -->
+        <div class="ritekhed-top-strip ritekhed-bgcolor-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="ritekhed-top-strip-social">
+                            <li><a href="#" class="fab fa-facebook-f"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-linkedin-in"></a></li>
+                            <li><a href="#" class="fab fa-google-plus-g"></a></li>
+                            <li><a href="#" class="fab fa-dribbble"></a></li>
+                        </ul>
+                        <ul class="ritekhed-user-section">
+                            <li><i class="fa fa-globe"></i> <a href="#">Support</a></li>
+                            <li><i class="fab fa-opencart"></i> <a href="#" class="ritekhed-open-cart">Cart (0)</a>
+                                <div class="ritekhed-cart-box">
+                                    <h2>You have 2 items in the cart</h2>
+                                    <ul>
+                                        <li>
+                                            <figure>
+                                                <a href="checkout.html"><img src="{% static '/sportsfinal/css/extra-images/cartbox-1.png' %}" alt=""></a>
+                                            </figure>
+                                            <div class="ritekhed-cartbox-text">
+                                                <h6><a href="checkout.html">Key Management Model The 60+ Models</a></h6>
+                                                <div class="ritekhed-rating"><span class="ritekhed-rating-box eight-percent"></span></div>
+                                                <span class="ritekhed-cartbox-price ritekhed-color">$35.99 <small>$43.00</small></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <a href="checkout.html"><img src="{% static '/sportsfinal/css/extra-images/cartbox-2.png' %}" alt=""></a>
+                                            </figure>
+                                            <div class="ritekhed-cartbox-text">
+                                                <h6><a href="checkout.html">Pyramid Principle: Logic Writing &amp; Thinking</a></h6>
+                                                <div class="ritekhed-rating"><span class="ritekhed-rating-box ten-percent"></span></div>
+                                                <span class="ritekhed-cartbox-price ritekhed-color">$21.00</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <h5>Subtotal <span class="ritekhed-color">$1343</span></h5>
+                                    <div class="ritekhed-cart-link"><a href="checkout.html" class="ritekhed-cartbox-btn ritekhed-bgcolorhover"><i class="flaticon-tool"></i> Go to Checkout</a></div>
+                                </div>
+                            </li>
+                            <li><i class="far fa-user"></i> <a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                            <li><i class="fa fa-sign-in-alt"></i> <a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Strip -->
+
+        <!-- Main Header -->
+        <div class="ritekhed-main-header ritekhed-border-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="index-2.html" class="ritekhed-logo"><h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>PLANET</b></span> <span class="w3-hide-small w3-text-light-grey">SPORTS</span></h1></a>
+                        
+                        <div class="ritekhed-right-head">
+                            <span class="ritekhed-menu-link">
+                                <span class="menu-bar"></span>
+                                <span class="menu-bar"></span>
+                                <span class="menu-bar"></span>
+                            </span>
+                            <nav id="main-nav">
+                                <ul id="main-menu" class="sm sm-blue">
+                                    <li class="active"><a href="index-2.html">Home</a></li>
+                                    <li><a href="#">Features</a>
+                                        <ul>
+                                            <li><a href="EventOrganizations.html">EventOrganizations</a></li>
+                                            <li><a href="CoachingInstitute.html">CoachingInstitute</a></li>
+                                            <li><a href="RepairingZone.html">RepairingZone</a></li> 
+                                            <li><a href="all-fixture.html">Fixture All Matches</a></li>
+                                            <li><a href="fixture-list.html">Fixture List</a></li>
+                                            <li><a href="fixture-detail.html">Fixture Detail</a></li>
+                                            <li><a href="gallery-classic.html">Gallery Classic</a></li>
+                                            <li><a href="gallery-simple.html">Gallery Simple</a></li>
+                                            <li><a href="404.html">404 Error Page</a></li>
+                                            <li><a href="login-register.html">Login Register</a></li>
+                                            <li><a href="search-result.html">Search Result</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Players</a>
+                                        <ul>
+                                            <li><a href="#">Player Grid</a>
+                                                <ul>
+                                                    <li><a href="player-grid.html">Player Grid W/O/S</a></li>
+                                                    <li><a href="player-grid-wls.html">Player Grid W/L/S</a></li>
+                                                    <li><a href="player-grid-wrs.html">Player Grid W/R/S</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Player List</a>
+                                                <ul>
+                                                    <li><a href="player-list.html">Player List W/O/S</a></li>
+                                                    <li><a href="player-list-wls.html">Player List W/L/S</a></li>
+                                                    <li><a href="player-list-wrs.html">Player List W/R/S</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="player-detail.html">Player Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Our News</a>
+                                        <ul>
+                                            <li><a href="#">Blog Grid</a>
+                                                <ul>
+                                                    <li><a href="blog-grid.html">Blog Grid W/O/S</a></li>
+                                                    <li><a href="blog-grid-wls.html">Blog Grid W/L/S</a></li>
+                                                    <li><a href="blog-grid-wrs.html">Blog Grid W/R/S</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Blog Large</a>
+                                                <ul>
+                                                    <li><a href="blog-large-wos.html">Blog Large W/O/S</a></li>
+                                                    <li><a href="blog-large-wls.html">Blog Large W/L/S</a></li>
+                                                    <li><a href="blog-large.html">Blog Large W/R/S</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Blog Detail</a>
+                                                <ul>
+                                                    <li><a href="blog-detail.html">Blog Detail W/Thumb</a></li>
+                                                    <li><a href="blog-detail-wsound.html">Blog W/SounCloud</a></li>
+                                                    <li><a href="blog-detail-wvid.html">Blog Detail W/Video</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Our Shop</a>
+                                        <ul>
+                                            <li><a href="shop-grid.html">Shop Grid W/O/S</a></li>
+                                            <li><a href="shop-grid-wls.html">Shop Grid W/L/S</a></li>
+                                            <li><a href="shop-grid-wrs.html">Shop Grid W/R/S</a></li>
+                                            <li><a href="shop-detail.html">Shop Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Header -->
+    
+        <div class="container-fluid custm-cricket-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="img1 col-md-2">
+    
+                    </div>
+                    <div class="h1-tag text-center col-md-8">
+                        <h3>Planet Sports Festival 2020</h3>
+                       
+                    </div>
+                    <div class="img2 col-md-2">
+    
+                    </div>
+                    
+                </div>
+                </div>
+                
+    <h2>Payment Home</h2>
+    {% if error %}
+    <h3>{{ error }}</h3>
+    {% endif %}
+    <form method="POST" action="{% url 'pay' %}">
+        {% csrf_token %}
+        <div class="row first-form">
+            <div class="col-md-6 m-auto m-0">
+                <div class="ritekhed-login-box">
+                   
+                    <h2 style="color: white;">E-Mail:</h2>
+                    <input style="background-color:  black; width: 100%; margin: 10px auto;"type="text" name="email"  placeholder="E-Mail" required value="{{request.session.email}}">
+                    <h2 style="color: white;">Password:</h2>       
+                    <input style="background-color:  black; width: 100%; margin: 10px auto;" type="text" name="password" placeholder="Password" required>
+                    <h2 style="color: white;">Amount:</h2>
+                    <input style="background-color:  black; width: 100%; margin: 10px auto;" type="number" name="amount" value="{{total}}">
+                    <input type="submit" name="submit"  class="ritekhed-bordercolor ritekhed-color custm-btn-style" value="Submit" required>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+<!-- Footer -->
+<footer id="ritekhed-footer" class="ritekhed-footer-one">
+    <!-- Footer Widget -->
+    <div class="ritekhed-footer-widget">
+        <div class="container">
+            <div class="row">
+                <!-- Widget Footer About -->
+                <aside class="widget col-md-4 widget_footer_about">
+                    <a href="index-2.html" class="footer-logo"><h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>PLANET</b></span> <span class="w3-hide-small w3-text-light-grey">SPORTS</span></h1></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elUt ac malesuada ante.Sed gravida, ur quis tempus sollicitudin, tellus urna</p>
+                    <ul class="ritekhed-social-network">
+                        <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook"></a></li>
+                        <li><a href="https://twitter.com/login" class="ritekhed-colorhover fab fa-twitter-square"></a></li>
+                        <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+                        <li><a href="https://plus.google.com/" class="ritekhed-colorhover fab fa-google-plus-square"></a></li>
+                    </ul>
+                    <ul class="ritekhed-info-list">
+                        <li><i class="fa fa-map-marker-alt"></i> <span>9907 Salford road, east London Uk 2807</span></li>
+                        <li><i class="fa fa-phone"></i> <span>(+92) 123 45 678 - 987 65 432</span></li>
+                        <li><i class="far fa-envelope"></i> <span><a href="mailto:name@email.com">info@example.com</a></span></li>
+                    </ul>
+                </aside>
+                <!-- Widget Footer About -->
+                <!-- Widget Featured News -->
+                <aside class="widget col-md-4 widget_featured_news">
+                    <div class="footer-widget-title"> <h2>Featured News</h2> </div>
+                    <ul>
+                        <li>
+                            <span>01</span>
+                            <h6><a href="#">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</a></h6>
+                            <time datetime="2008-02-14 20:00">December 29, 2017</time>
+                        </li>
+                        <li>
+                            <span>02</span>
+                            <h6><a href="#">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</a></h6>
+                            <time datetime="2008-02-14 20:00">December 29, 2017</time>
+                        </li>
+                        <li>
+                            <span>03</span>
+                            <h6><a href="#">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</a></h6>
+                            <time datetime="2008-02-14 20:00">December 29, 2017</time>
+                        </li>
+                    </ul>
+                </aside>
+                <!-- Widget Featured News -->
+                <!-- Widget Gallery -->
+                <aside class="widget col-md-4 widget_gallery">
+                    <div class="footer-widget-title"> <h2>Flicker Photos</h2> </div>
+                    <ul>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-2.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-3.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-4.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-5.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-6.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-7.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-8.jpg' %}" alt=""></a></li>
+                    </ul>
+                </aside>
+                <!-- Widget Gallery -->
+            </div>
+            <a href="#" class="ritekhed-back-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+    </div>
+    <!-- Footer Widget -->
+
+    <!-- CopyRight -->
+    <div class="ritekhed-copyright">
+        <div class="container">
+            <div class="row">
+                <aside class="col-md-6"><p>© 2020, All Right Reserved - by <a href="index-2.html">Planet Sports</a></p></aside>
+                <aside class="col-md-6">
+                    <ul class="ritekhed-copyright-link">
+                        <li><a href="#">Terms And Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <!-- CopyRight -->
+
+</footer>
+<!-- Footer -->
+</div>
+
+</body>
+
+<!-- jQuery -->
+<script src="{% static '/sportsfinal/js/jquery.js' %}"></script>
+<script src="{% static '/sportsfinal/js/popper.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/bootstrap.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/slick.slider.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/fancybox.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/isotope.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/smartmenus.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/progressbar.js' %}"></script>
+<script src="{% static '/sportsfinal/js/counter.js' %}"></script>
+<script src="{% static '/sportsfinal/js/jquery.countdown.min.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="{% static '/sportsfinal/js/functions.js' %}"></script>
+</html>

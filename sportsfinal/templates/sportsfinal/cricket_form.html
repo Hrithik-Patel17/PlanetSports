@@ -1,0 +1,510 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="{% static '/sportsfinal/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static '/sportsfinal/css/style.css' %}">
+	<!-- CSS -->
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fontawesome-all.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/slick-slider.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fancybox.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/smartmenus.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/color.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/responsive.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<title></title>
+	<style>
+		
+      .custm-btn-style{
+      float: left;
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 15px 25px;
+      line-height: 1;
+      text-transform: uppercase;
+      border-radius: 5px;
+      cursor: pointer;
+      }
+      .custm-cricket-bg{
+      background:url(/static/sportsfinal/css/extra-images/cricket-form-bg.jpg)no-repeat;
+      background-size: cover;
+      background-attachment:fixed;
+      }	
+      .ritekhed-login-box{
+      background-color: #28292b85;
+      }
+      .custm-table{
+        background-color: #28292b85;
+        
+      }
+        
+        
+	</style>
+</head>
+<body class="Home">
+<!-- Main Header -->
+<div class="ritekhed-main-header ritekhed-border-color">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="index-2.html" class="ritekhed-logo"><h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>PLANET</b></span> <span class="w3-hide-small w3-text-light-grey">SPORTS</span></h1></a>
+				
+				<div class="ritekhed-right-head">
+					<span class="ritekhed-menu-link">
+						<span class="menu-bar"></span>
+						<span class="menu-bar"></span>
+						<span class="menu-bar"></span>
+					</span>
+					<nav id="main-nav">
+						<ul id="main-menu" class="sm sm-blue">
+							<li class="active"><a href="{% url 'home' %}">Home</a></li>
+							<li><a href="#">Features</a>
+								<ul>
+									<li><a href="{% url 'sportsClubMembership' %}">EventOrganizations</a></li>
+									<li><a href="{% url 'CricketForm' %}">Participate Event</a></li>
+									<li><a href="{% url 'RepairingZ' %}">RepairingZone</a></li> 
+									<li><a href="{% url 'fixture-list' %}">Fixture List</a></li>
+									<li><a href="{% url 'GroundHome1' %}">GroundBooking</a></li>
+									<li><a href="{% url 'gallery-simple' %}">Gallery Classic</a></li>
+									<li><a href="{% url 'blog-grid' %}">Gallery Classic</a></li>
+									<li><a href="{% url 'login-register' %}">Login Register</a></li>
+
+								</ul>
+							</li>
+							<li><a href="#">Players</a>
+								<ul>
+									<li><a href="#">Player Grid</a>
+										<ul>
+											<li><a href="{% url 'player-grid' %}">Player Grid </a></li>
+											<li><a href="{% url 'shop-grid' %}">Product Grid</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Our News</a>
+								<ul>
+									<li><a href="#">Blog Grid</a>
+										<ul>
+											<li><a href="{% url 'blog-grid' %}">Blog-Grid</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Blog Large</a>
+										<ul>
+											<li><a href="blog-large-wos.html">Blog Large W/O/S</a></li>
+											<li><a href="blog-large-wls.html">Blog Large W/L/S</a></li>
+											<li><a href="blog-large.html">Blog Large W/R/S</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Blog Detail</a>
+										<ul>
+											<li><a href="blog-detail.html">Blog Detail W/Thumb</a></li>
+											<li><a href="blog-detail-wsound.html">Blog W/SounCloud</a></li>
+											<li><a href="blog-detail-wvid.html">Blog Detail W/Video</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Our Shop</a>
+								<ul>
+									<li><a href="{% url 'checkoutPlayer' %}">Player-Cart</a></li>
+									<li><a href="{% url 'checkout' %}">Product-Cart</a></li>
+								</ul>
+							</li>
+							<li><a href="contact-us.html">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Main Header -->
+
+
+	<div class="container-fluid custm-cricket-bg">
+		<div class="container">
+			<div class="row">
+				<div class="img1 col-md-2">
+
+				</div>
+				<div class="h1-tag text-center col-md-8">
+					<h3>Planet Sports Festival 2020</h3>
+					<h1>TEAM REGISTRATION FORM</h1>
+				</div>
+				<div class="img2 col-md-2">
+
+				</div>
+			</div>
+			<form  action="{% url 'TournamentForm' %}" method="post">
+				{% csrf_token %}
+				<div class="row first-form">
+					<div class="col-md-6 m-auto m-0">
+						<div class="ritekhed-login-box">
+							<h4 style="color: white;">TEAM INFORMATION</h4>
+							<input style="background-color:  black; width: 100%; margin: 10px auto;" type="text" name="TeamN" placeholder="Team Name" >
+							<h4 style="color: white;">TEAM MANAGER INFORMATION (Team’s Point of Contact)</h4>
+							<input style="background-color:  black; width: 100%; margin: 10px auto;" type="text" name="ManagerN" placeholder="Manage's Namess" >
+							<input style="background-color: black; width: 100%; margin: 10px auto;" type="text" name="EmailAD" placeholder="Email Address" >
+							<input style="background-color: black; width: 100%; margin: 10px auto;" type="text" name="WorkP" placeholder="Phone (Work)" >
+							<input style="background-color: black; width: 100%; margin: 10px auto;" type="text" name="otherP" placeholder="Phone (Other)" >
+							<h4 style="color: white;">TEAM CAPTAIN INFORMATION</h4>
+							<input style="background-color: black; width: 100%; margin: 10px auto;" type="text" name="captainN" placeholder="Captain Name" >
+							<input style="background-color: black; width: 100%; margin: 10px auto;" type="text" name="capEmail" placeholder="Email Address" >
+							<input style="background-color: black; width: 100%; margin: 10px auto;" type="text" name="capHomeN" placeholder="Phone (Home)" >
+							<input style="background-color: black; width: 100%; margin: 10px auto;" type="text" name="capworkP" placeholder="Phone (Work)" >
+							<input style="background-color: black; width: 100%; margin: 10px auto;" type="text" name="capotherP" placeholder="Phone (other)" >
+							<input style="background-color: black; width: 100%; margin: 10px auto;" type="text" name="payment" placeholder="Payment" >
+							<input style="background-color: black; width: 100%; margin: 10px auto;" type="text" name="sign" placeholder="Team Manager’s Signature" >
+							<label><input type="submit" value="Submit" class="ritekhed-bordercolor ritekhed-color custm-btn-style"></label>
+							
+							
+						</div>
+					</div>
+					<!-- <div class="col-md-12 float-left">
+						<strong>TEAM INFORMATION</strong>
+					</div>
+					<div class="col-md-2">
+						<span>Team Name</span>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="TeamN">
+					</div>
+					<div class="col-md-12 float-left">
+						<strong>TEAM MANAGER INFORMATION (Team’s Point of Contact)</strong>
+					</div>
+					<div class="col-md-2">
+						<span>Manager’s Name:</span>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="ManagerN">
+					</div>
+					<div class="col-md-2">
+						<span>Email Address:</span>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="EmailAD">
+					</div>
+					<div class="col-md-2">
+						<span>Phone (Work):</span>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="WorkP">
+					</div>
+					<div class="col-md-2">
+						<span>Phone (Other):</span>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="otherP">
+					</div>
+					<div class="col-md-12 float-left">
+						<strong>TEAM CAPTAIN INFORMATION</strong>
+					</div>
+					<div class="col-md-2">
+						<span>Captain Name:</span>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="captainN">
+					</div>
+					<div class="col-md-2">
+						<span>Email Address:</span>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="capEmail">
+					</div>
+					<div class="col-md-2">
+						<span>Phone (Home):</span>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="capHomeN">
+					</div>
+					<div class="col-md-2">
+						<span>Phone (Work):</span>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="capworkP">
+					</div>
+					<div class="col-md-2">
+						<span>Phone (Other):</span>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="capotherP">
+					</div>
+					<div class="col-md-2">
+						<h6>Deposit</h6>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text">
+					</div>
+					<div class="col-md-2">
+						<h6>Final Payment</h6>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="payment">
+					</div>
+					<div class="col-md-2">
+						<h3>TOTAL</h3>
+					</div>
+					<div class="col-md-10">
+						<input class="first-form-input" type="text" name="Totalpayment">
+					</div>
+					<div class="col-md-3">
+						<span>Team Manager’s Signature: Date:</span>
+					</div>
+					<div class="col-md-9">
+						<input class="first-form-input" type="text" name="sign">
+					</div>
+					<div class="col-md-12">
+						<span style="color:red;">*Please Make Certified payments payable to Police Cricket Team International Tournament</span>
+					</div>-->
+				</div> 
+
+			
+			<div class="second-form">
+				<div class="row">
+					<div class="col-md-12 text-center team-regi">
+					<h1>TEAM REGISTRATION FORM (Cont’d)</h1>
+					</div>
+					<div class="custm-table col-md-12">
+						<div class="table-responsive">
+							<table>
+									<tr>
+										<th><h3>Sr. No.</h3></th>
+										<th><h3>Name</h3></th>
+										<th><h3>Number Telephone</h3></th>
+									</tr>
+										
+									</tr>
+								<tbody>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+									<tr>
+										<td><input class="table-input td-srno" type="text" name="N"></td>
+										<td><input class="table-input td-name" type="text" name="N"></td>
+										<td><input class="table-input td-phn" type="text"  name="N"></td>
+									</tr>
+								</tbody>
+							</table>
+							</form>
+									   <form
+									        action="{% url 'player-grid' %}"
+									        method="post"
+									 >
+									        {% csrf_token %}
+							           <label><input type="submit" value="Add Guest Player" class="ritekhed-bordercolor ritekhed-color custm-btn-style"></label>
+							           </form>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="third-form">
+				<div class="custm-para">	
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Footer -->
+<footer id="ritekhed-footer" class="ritekhed-footer-one">
+	<!-- Footer Widget -->
+	<div class="ritekhed-footer-widget">
+		<div class="container">
+			<div class="row">
+				<!-- Widget Footer About -->
+				<aside class="widget col-md-4 widget_footer_about">
+					<a href="index-2.html" class="footer-logo"><h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>PLANET</b></span> <span class="w3-hide-small w3-text-light-grey">SPORTS</span></h1></a>
+					<p>This product will help consumer to effectively progress in his interest of sport in multiple ways. The main objective of this project is to provide a platform where vendor can sell their product and user can buy the product. The ground booking and event organization task become less time consuming and less strenuous activity. The participants can participate in the event and hire the guest players. Keep user updated with latest news.</p>
+					<!-- <ul class="ritekhed-social-network">
+						<li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook"></a></li>
+						<li><a href="https://twitter.com/login" class="ritekhed-colorhover fab fa-twitter-square"></a></li>
+						<li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+						<li><a href="https://plus.google.com/" class="ritekhed-colorhover fab fa-google-plus-square"></a></li>
+					</ul> -->
+					<ul class="ritekhed-info-list">
+						<li><i class="fa fa-map-marker-alt"></i> <span>D-Tech Sports Num, Naroda, Ahmedabad</span></li>
+						<li><i class="fa fa-phone"></i> <span>(+91) 8547632100</span></li>
+						<li><i class="far fa-envelope"></i> <span><a href="mailto:name@email.com">PlanetSports17@gmail.com</a></span></li>
+					</ul>
+				</aside>
+				<!-- Widget Footer About -->
+				<!-- Widget Featured News -->
+				<aside class="widget col-md-4 widget_featured_news">
+					<div class="footer-widget-title"> <h2>Featured News</h2> </div>
+					<ul>
+						<li>
+							<span>01</span>
+							<h6><a href="#">Brendan Rodgers to raid his former club as he prepares to make a second bid for Celtic's Callum McGregor</a></h6>
+							<time datetime="2008-02-14 20:00">23/02/2020</time>
+						</li>
+						<li>
+							<span>02</span>
+							<h6><a href="#">Brendan Rodgers to raid his former club as he prepares to make a second bid for Celtic's Callum McGregor</a></h6>
+							<time datetime="2008-02-14 20:00">23/02/2020</time>
+						</li>
+						<li>
+							<span>03</span>
+							<h6><a href="#">Leicester are worried about losing James Maddison to Manchester United in the next transfer window, and are looking for backup.</a></h6>
+							<time datetime="2008-02-14 20:00">23/02/2020</time>
+						</li>
+					</ul>
+				</aside>
+				<!-- Widget Featured News -->
+				<!-- Widget Gallery -->
+				<aside class="widget col-md-4 widget_gallery">
+					<div class="footer-widget-title"> <h2>Flicker Photos</h2> </div>
+					<ul>
+						<li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" alt=""></a></li>
+						<li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-2.jpg' %}" alt=""></a></li>
+						<li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-3.jpg' %}" alt=""></a></li>
+						<li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-4.jpg' %}" alt=""></a></li>
+						<li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-5.jpg' %}" alt=""></a></li>
+						<li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-6.jpg' %}" alt=""></a></li>
+						<li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-7.jpg' %}" alt=""></a></li>
+						<li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-8.jpg' %}" alt=""></a></li>
+					</ul>
+				</aside>
+				<!-- Widget Gallery -->
+			</div>
+			<a href="#" class="ritekhed-back-top"><i class="fa fa-angle-up"></i></a>
+		</div>
+	</div>
+	<!-- Footer Widget -->
+	
+				<!-- CopyRight -->
+				<div class="ritekhed-copyright">
+					<div class="container">
+						<div class="row">
+							<aside class="col-md-6"><p>© 2020, All Right Reserved - by <a href="index-2.html">Planet Sports</a></p></aside>
+							<aside class="col-md-6">
+								<ul class="ritekhed-copyright-link">
+									<li><a href="#">Terms And Condition</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+								</ul>
+							</aside>
+						</div>
+					</div>
+				</div>
+				<!-- CopyRight -->
+	
+			</footer>
+			<!-- Footer -->
+		</div>
+
+</body>
+
+    <!-- jQuery -->
+    <script src="{% static '/sportsfinal/js/jquery.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/popper.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/slick.slider.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/fancybox.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/isotope.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/smartmenus.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/progressbar.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/counter.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/jquery.countdown.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="{% static '/sportsfinal/js/functions.js' %}"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

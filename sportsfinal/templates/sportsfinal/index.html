@@ -1,0 +1,986 @@
+{% load static %}
+<!doctype html>
+<html lang="zxx">
+
+
+<!-- Mirrored from www.rite-tags.com/html/ritekhed/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Oct 2019 11:25:12 GMT -->
+<head>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Sports & Magazine</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fontawesome-all.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/slick-slider.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fancybox.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/smartmenus.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/color.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/responsive.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="home">
+
+    <div class="ritekhed-wrapper">
+
+
+            <!-- Main Header -->
+            <div class="ritekhed-main-header ritekhed-border-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="index-2.html" class="ritekhed-logo"><h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>PLANET</b></span> <span class="w3-hide-small w3-text-light-grey">SPORTS</span></h1></a>
+                            
+                            <div class="ritekhed-right-head">
+                                <span class="ritekhed-menu-link">
+                                    <span class="menu-bar"></span>
+                                    <span class="menu-bar"></span>
+                                    <span class="menu-bar"></span>
+                                </span>
+                                <nav id="main-nav">
+                                    <ul id="main-menu" class="sm sm-blue">
+                                        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                                        <li><a href="#">Features</a>
+                                            <ul>
+                                                <li><a href="{% url 'sportsClubMembership' %}">EventOrganizations</a></li>
+                                                <li><a href="{% url 'CricketForm' %}">Participate Event</a></li>
+                                                <li><a href="{% url 'RepairingZ' %}">RepairingZone</a></li> 
+                                                <li><a href="{% url 'fixture-list' %}">Fixture List</a></li>
+                                                <li><a href="{% url 'GroundHome1' %}">GroundBooking</a></li>
+                                                <li><a href="{% url 'gallery-simple' %}">Gallery Classic</a></li>
+                                                <li><a href="{% url 'blog-grid' %}">Gallery Classic</a></li>
+                                                <li><a href="{% url 'login-register' %}">Login Register</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Players</a>
+                                            <ul>
+                                                <li><a href="#">Player Grid</a>
+                                                    <ul>
+                                                        <li><a href="{% url 'player-grid' %}">Player Grid </a></li>
+                                                        <li><a href="{% url 'shop-grid' %}">Product Grid</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Our News</a>
+                                            <ul>
+                                                <li><a href="#">Blog Grid</a>
+                                                    <ul>
+                                                        <li><a href="{% url 'blog-grid' %}">Blog-Grid</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Blog Large</a>
+                                                    <ul>
+                                                        <li><a href="blog-large-wos.html">Blog Large W/O/S</a></li>
+                                                        <li><a href="blog-large-wls.html">Blog Large W/L/S</a></li>
+                                                        <li><a href="blog-large.html">Blog Large W/R/S</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Blog Detail</a>
+                                                    <ul>
+                                                        <li><a href="blog-detail.html">Blog Detail W/Thumb</a></li>
+                                                        <li><a href="blog-detail-wsound.html">Blog W/SounCloud</a></li>
+                                                        <li><a href="blog-detail-wvid.html">Blog Detail W/Video</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Our Shop</a>
+                                            <ul>
+                                                <li><a href="{% url 'checkoutPlayer' %}">Player-Cart</a></li>
+                                                <li><a href="{% url 'checkout' %}">Product-Cart</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Header -->
+
+        </div>
+        <!-- Header -->
+
+        <!-- Banner -->
+        <div class="ritekhed-banner">
+
+            <div class="ritekhed-banner-layer">
+                <span class="ritekhed-banner"></span>
+                <img src="{% static '/GroundBook/images/sportsG5.jpg' %}" alt="">
+                <div class="ritekhed-banner-caption ritekhed-center-align">
+                    <div class="container">
+                        <h1>We Are The <strong class="ritekhed-color">PLANET SPORTS</strong> Be Our Partner</h1>
+                        <div class="clearfix"></div>
+                        <p> Welcome to the one and only platform for all passionate sports activity.</p>
+                        <!-- <div class="clearfix"></div>
+                        <a href="#" class="ritekhed-border-color ritekhed-color ritekhed-bgcolorhover ritekhed-colorhover-two">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- <div class="container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Role</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ request.session.id }}</td>
+          <td>{{ request.session.role }}</td>
+          <td>{{ request.session.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+   -->
+
+
+        <!-- Banner -->
+
+        <!-- Content -->
+        <!-- <div class="ritekhed-main-content"> -->
+
+            <!-- Main Section
+            <div class="ritekhed-main-section ritekhed-fixture-table-slider-full">
+                <div class="container-fluid">
+                    <div class="row">
+                        
+                            <!-- Fixture Table List -->
+                            <!-- <div class="ritekhed-fixture-table-slider"> -->
+<!--                                 
+                                <div class="ritekhed-fixture-table-slider-layer">
+                                    <time class="ritekhed-bgcolor-two" datetime="2008-02-14 20:00">August 28, 2016</time>
+                                    <ul class="ritekhed-bgcolor">
+                                        <li>CIT <span>03</span></li>
+                                        <li class="ritekhed-fixture-addtext">FullBook</li>
+                                    </ul>
+                                </div>
+                                <div class="ritekhed-fixture-table-slider-layer">
+                                    <time class="ritekhed-bgcolor-two" datetime="2008-02-14 20:00">August 28, 2016</time>
+                                    <ul class="ritekhed-bgcolor">
+                                        <li class="ritekhed-fixture-vs"><small>CIT</small> Vs <span>03</span></li>
+                                        <li>KIN <span>03</span></li>
+                                    </ul>
+                                </div>
+                                <div class="ritekhed-fixture-table-slider-layer">
+                                    <time class="ritekhed-bgcolor-two" datetime="2008-02-14 20:00">August 28, 2016</time>
+                                    <ul class="ritekhed-bgcolor">
+                                        <li>BRC <span>05</span></li>
+                                        <li>RM <span>01</span></li>
+                                    </ul>
+                                </div>
+                                <div class="ritekhed-fixture-table-slider-layer">
+                                    <time class="ritekhed-bgcolor-two" datetime="2008-02-14 20:00">August 28, 2016</time>
+                                    <ul class="ritekhed-bgcolor">
+                                        <li class="ritekhed-fixture-vs"><small>CIT</small> Vs <span>03</span></li>
+                                        <li class="ritekhed-fixture-addtext"><a href="#">Book Now</a></li>
+                                    </ul>
+                                </div>
+                                <div class="ritekhed-fixture-table-slider-layer">
+                                    <time class="ritekhed-bgcolor-two" datetime="2008-02-14 20:00">August 28, 2016</time>
+                                    <ul class="ritekhed-bgcolor">
+                                        <li>CIT <span>03</span></li>
+                                        <li class="ritekhed-fixture-addtext">FullBook</li>
+                                    </ul>
+                                </div>
+                                <div class="ritekhed-fixture-table-slider-layer">
+                                    <time class="ritekhed-bgcolor-two" datetime="2008-02-14 20:00">August 28, 2016</time>
+                                    <ul class="ritekhed-bgcolor">
+                                        <li class="ritekhed-fixture-vs"><small>CIT</small> Vs <span>03</span></li>
+                                        <li>KIN <span>03</span></li>
+                                    </ul>
+                                </div>
+                                <div class="ritekhed-fixture-table-slider-layer">
+                                    <time class="ritekhed-bgcolor-two" datetime="2008-02-14 20:00">August 28, 2016</time>
+                                    <ul class="ritekhed-bgcolor">
+                                        <li>BRC <span>05</span></li>
+                                        <li>RM <span>01</span></li>
+                                    </ul>
+                                </div>
+                                <div class="ritekhed-fixture-table-slider-layer">
+                                    <time class="ritekhed-bgcolor-two" datetime="2008-02-14 20:00">August 28, 2016</time>
+                                    <ul class="ritekhed-bgcolor">
+                                        <li class="ritekhed-fixture-vs"><small>CIT</small> Vs <span>03</span></li>
+                                        <li class="ritekhed-fixture-addtext"><a href="#">Book Now</a></li>
+                                    </ul> -->
+                                <!-- </div>
+                                <div class="ritekhed-fixture-table-slider-layer">
+                                    <time class="ritekhed-bgcolor-two" datetime="2008-02-14 20:00">August 28, 2016</time>
+                                    <ul class="ritekhed-bgcolor">
+                                        <li class="ritekhed-fixture-vs"><small>CIT</small> Vs <span>03</span></li>
+                                        <li class="ritekhed-fixture-addtext"><a href="#">Book Now</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>  -->
+                            <!-- Fixture Table List -->
+                    </div>
+                </div>
+            </div>
+            <!-- Main Section -->
+
+            <!-- Main Section -->
+            <div class="ritekhed-main-section">
+                <div class="container">
+                    <div class="row">
+                        
+                        <!-- Counter -->
+                        <!-- <div class="col-md-12">
+                            <div class="ritekhed-counter">
+                                <ul class="row">
+                                    <li class="col-md-3">
+                                        <div class="ritekhed-counter-wrap">
+                                            <i class="ritekhed-color fa fa-globe"></i>
+                                            <span class="word-count" id="word-count1">15000</span>
+                                            <small>Total Goals</small>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <div class="ritekhed-counter-wrap">
+                                            <i class="ritekhed-color fa fa-wine-glass"></i>
+                                            <span class="word-count" id="word-count2">70000</span>
+                                            <small>Possession</small>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <div class="ritekhed-counter-wrap">
+                                            <i class="ritekhed-color fa fa-hand-point-right"></i>
+                                            <span class="word-count" id="word-count4">30000</span>
+                                            <small>Win Match</small>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <div class="ritekhed-counter-wrap">
+                                            <i class="ritekhed-color far fa-heart"></i>
+                                            <span class="word-count" id="word-count3">50000</span>
+                                            <small>corner goal</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <!-- Counter -->
+
+                        <!-- Match Fixtures -->
+                        <div class="col-md-6" style="margin: 20px auto;">
+                            <div class="ritekhed-match-fixture">
+                                <div class="ritekhed-classic-heading">
+                                    <h2><a href="{% url 'fixture-list' %}">Match Fixtures</a></h2>
+                                </div>
+                                <table class="ritekhed-client-detail">
+                                    <tr>
+                                        <td>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img1.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Ocean Kings</h6>
+                                                <span>St. Patrick’s Institute</span>
+                                            </div>
+                                        </td>
+                                        <td><span>VS</span></td>
+                                        <td>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img2.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Bloody Wave</h6>
+                                                <span>Marine College</span>
+                                            </div>
+                                        </td>
+                                        <td>December 09, 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img3.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>L.A Pirates</h6>
+                                                <span>Bebop Institute</span>
+                                            </div>
+                                        </td>
+                                        <td><span>VS</span></td>
+                                        <td>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img4.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Ocean Kings</h6>
+                                                <span>Icarus College</span>
+                                            </div>
+                                        </td>
+                                        <td>December 11, 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img5.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Red Wings</h6>
+                                                <span>Marine College</span>
+                                            </div>
+                                        </td>
+                                        <td><span>VS</span></td>
+                                        <td>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img6.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Lucky Clovers</h6>
+                                                <span>Elric Bros School</span>
+                                            </div>
+                                        </td>
+                                        <td>December 12, 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img6.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Draconians</h6>
+                                                <span>Atlantic School</span>
+                                            </div>
+                                        </td>
+                                        <td><span>VS</span></td>
+                                        <td>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img1.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Ocean Kings</h6>
+                                                <span>St. Patrick’s Institute</span>
+                                            </div>
+                                        </td>
+                                        <td>December 15, 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img2.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Bloody Wave</h6>
+                                                <span>Marine College</span>
+                                            </div>
+                                        </td>
+                                        <td><span>VS</span></td>
+                                        <td>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img3.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>L.A Pirates</h6>
+                                                <span>Bebop Institute</span>
+                                            </div>
+                                        </td>
+                                        <td>December 17, 2020</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Match Fixtures -->
+                        
+                        <!-- Ranking Table -->
+                        <div class="col-md-6" style="margin: 20px auto;">
+                            <div class="ritekhed-match-fixture ritekhed-team-ranking">
+                                <div class="ritekhed-classic-heading">
+                                    <h2>Team Rankings</h2>
+                                </div>
+                                <table class="ritekhed-client-detail">
+                                    <tr>
+                                        <th>Team Rank</th>
+                                        <th>P</th>
+                                        <th>W</th>
+                                        <th>L</th>
+                                        <th>D</th>
+                                        <th>PTS</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>1</span>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img3.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Ocean Kings</h6>
+                                                <span>Patrick’s Institute</span>
+                                            </div>
+                                        </td>
+                                        <td>13</td>
+                                        <td>11</td>
+                                        <td>01</td>
+                                        <td>02</td>
+                                        <td>24</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>2</span>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img4.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Ocean Kings</h6>
+                                                <span>Patrick’s Institute</span>
+                                            </div>
+                                        </td>
+                                        <td>13</td>
+                                        <td>09</td>
+                                        <td>02</td>
+                                        <td>02</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>3</span>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img5.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Ocean Kings</h6>
+                                                <span>Patrick’s Institute</span>
+                                            </div>
+                                        </td>
+                                        <td>12</td>
+                                        <td>09</td>
+                                        <td>03</td>
+                                        <td>00</td>
+                                        <td>18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>4</span>
+                                            <figure><img src="{% static '/sportsfinal/css/extra-images/player-stats-img6.jpg' %}" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Ocean Kings</h6>
+                                                <span>Patrick’s Institute</span>
+                                            </div>
+                                        </td>
+                                        <td>12</td>
+                                        <td>07</td>
+                                        <td>04</td>
+                                        <td>01</td>
+                                        <td>15</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Ranking Table -->
+
+                        <!-- Partners -->
+                        <!-- <div class="col-md-12">
+                            <div class="ritekhed-partner-slider">
+                                <div class="ritekhed-partner-slider-layer">
+                                    <a href="#"><img src="{% static '/sportsfinal/css/extra-images/partner-logo-1.jpg' %}" alt=""></a>
+                                </div>
+                                <div class="ritekhed-partner-slider-layer">
+                                    <a href="#"><img src="{% static '/sportsfinal/css/extra-images/partner-logo-2.jpg' %}" alt=""></a>
+                                </div>
+                                <div class="ritekhed-partner-slider-layer">
+                                    <a href="#"><img src="{% static '/sportsfinal/css/extra-images/partner-logo-3.jpg' %}" alt=""></a>
+                                </div>
+                                <div class="ritekhed-partner-slider-layer">
+                                    <a href="#"><img src="{% static '/sportsfinal/css/extra-images/partner-logo-1.jpg' %}" alt=""></a>
+                                </div>
+                                <div class="ritekhed-partner-slider-layer">
+                                    <a href="#"><img src="{% static '/sportsfinal/css/extra-images/partner-logo-2.jpg' %}" alt=""></a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- Partners -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Main Section -->
+
+            <!-- Main Section -->
+            <div class="ritekhed-main-section ritekhed-parallax-full">
+                <span class="ritekhed-banner-transparent"></span>
+                <div class="container">
+                    <div class="row">
+                        
+                        <!-- Parallax -->
+                        <div class="col-md-12">
+                            <div class="ritekhed-parallax">
+                                <h2>Take look at the brand New Uniforms next season The team is taking</h2>
+                                <div class="clearfix"></div>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac malesuada Curabitur lacinia diam tempus tempor consectetur. Sed vitae dignis us eget aliquam libero.</p> -->
+                                <!-- <div class="clearfix"></div>
+                                <a href="#" class="ritekhed-border-color ritekhed-color ritekhed-bgcolorhover ritekhed-colorhover-two">Read More</a> -->
+                            </div>
+                        </div>
+                        <!-- Parallax -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Main Section -->
+
+            <!-- Main Section -->
+            <div class="ritekhed-main-section">
+                <div class="container">
+                    <div class="row">
+                        
+                        <!-- Result -->
+                        <div class="col-md-6">
+                            <div class="ritekhed-classic-heading">
+                                <h2>Next Match</h2>
+                            </div>
+                            <div class="ritekhed-nextmatch">
+                                <ul class="ritekhed-team-matches">
+                                    <li>
+                                        <a href="#"><img src="{% static '/sportsfinal/css/extra-images/next-match-1.png' %}" alt=""> <span>Arsenal</span></a>
+                                    </li>
+                                    <li><small>Thurseday</small>
+                                        <time class="ritekhed-color" datetime="2008-02-14 20:00">28 October</time> <small>15:00pm</small></li>
+                                    <li>
+                                        <a href="#"><img src="{% static '/sportsfinal/css/extra-images/next-match-2.png' %}" alt=""> <span>Premier League</span></a>
+                                    </li>
+                                </ul>
+                                <div id="ritekhed-match-countdown" class="ritekhed-match-countdown"></div>
+                                <a href="#" class="ritekhed-ticket-button ritekhed-bgcolor">Less Than 420 Tickets Left For Villa</a>
+                            </div>
+                        </div>
+                        <!-- Result -->
+
+                        <!-- Result -->
+                        <div class="col-md-6">
+                            <div class="ritekhed-classic-heading">
+                                <h2>Latest Result</h2>
+                            </div>
+                            <div class="ritekhed-latest-result-wrap">
+                                <div class="ritekhed-latest-result">
+                                    <ul>
+                                        <li>
+                                            <span>Corner FC</span>
+                                            <img src="{% static '/sportsfinal/css/extra-images/latest-result-1.png' %}" alt="">
+                                            <span>Win</span>
+                                        </li>
+                                        <li>
+                                            <div class="ritekhed-result-time">
+                                                <div class="ritekhed-time-wrap">
+                                                    3:1
+                                                    <small>14 October 2016 21:00 (FT)</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>LiMax</span>
+                                            <img src="{% static '/sportsfinal/css/extra-images/latest-result-2.png' %}" alt="">
+                                            <span>Loss</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Result -->
+
+                        <!-- Blog's -->
+                        <div class="col-md-12">
+                            <div class="ritekhed-fancy-title"> <h2>Latest News</h2> </div>
+                            <!-- Blog Grid -->
+                            <div class="ritekhed-blog ritekhed-blog-grid">
+                                <ul class="row">
+                                    <li class="col-md-3">
+                                        <figure><a href="{% url 'blog-grid' %}"><img src="{% static '/sportsfinal/css/extra-images/blog-grid-img1.jpg' %}" alt=""> <span class="ritekhed-blog-hover"><i class="fa fa-link ritekhed-bgcolor"></i></span> </a></figure>
+                                        <div class="ritekhed-blog-grid-text ritekhed-border-color">
+                                            <ul>
+                                                <li><i class="far fa-user"></i> <a href="#"> Ben Simmions </a></li>
+                                                <li><i class="far fa-calendar-alt"></i> 23/02/2020</li>
+                                            </ul>
+                                            <!-- <h2><a href="#">The summer of 2014 was understand</a></h2> -->
+                                            <p>Ben Simmons back injury flares up in NBA, forced out of 76ers vs Bucks game</p>
+                                            <!-- <a href="#" class="ritekhed-blog-grid-btn ritekhed-bgcolor">Read More</a> -->
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="{% url 'blog-grid' %}"><img src="{% static '/sportsfinal/css/extra-images/blog-grid-img2.jpg' %}" alt=""> <span class="ritekhed-blog-hover"><i class="fa fa-link ritekhed-bgcolor"></i></span> </a></figure>
+                                        <div class="ritekhed-blog-grid-text ritekhed-border-color">
+                                            <ul>
+                                                <li><i class="far fa-user"></i> <a href="#">Brendan Rodgers</a></li>
+                                                <li><i class="far fa-calendar-alt"></i> 23/02/2020</li>
+                                            </ul>
+                                            <!-- <h2><a href="#">Sevilla finished fifth and just out</a></h2> -->
+                                            <p>Brendan Rodgers to raid his former club as he prepares to make a second bid for Celtic's Callum McGregor</p>
+                                            <!-- <a href="#" class="ritekhed-blog-grid-btn ritekhed-bgcolor">Read More</a> -->
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="{% url 'blog-grid' %}"><img src="{% static '/sportsfinal/css/extra-images/blog-grid-img3.jpg' %}" alt=""> <span class="ritekhed-blog-hover"><i class="fa fa-link ritekhed-bgcolor"></i></span> </a></figure>
+                                        <div class="ritekhed-blog-grid-text ritekhed-border-color">
+                                            <ul>
+                                                <li><i class="far fa-user"></i> <a href="#"> Cart Twickenham</a></li>
+                                                <li><i class="far fa-calendar-alt"></i> 23/02/2020</li>
+                                            </ul>
+                                            <!-- <h2><a href="#">United, Palace Aim To Rebound</a></h2> -->
+                                            <p>Prop recalls Irish hurt at Twickenham, is blunt over scrums and tells an hilarious tale about his ‘nanny’</p>
+                                            <!-- <a href="#" class="ritekhed-blog-grid-btn ritekhed-bgcolor">Read More</a> -->
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="{% url 'blog-grid' %}"><img src="{% static '/sportsfinal/css/extra-images/blog-grid-img4.jpg' %}" alt=""> <span class="ritekhed-blog-hover"><i class="fa fa-link ritekhed-bgcolor"></i></span> </a></figure>
+                                        <div class="ritekhed-blog-grid-text ritekhed-border-color">
+                                            <ul>
+                                                <li><i class="far fa-user"></i> <a href="#">James Maddison</a></li>
+                                                <li><i class="far fa-calendar-alt"></i> 23/02/2020</li>
+                                            </ul>
+                                            <!-- <h2><a href="#">was understand all about the</a></h2> -->
+                                            <p>Leicester are worried about losing James Maddison to Manchester United in the next transfer window, and are looking for backup. </p>
+                                            <!-- <a href="#" class="ritekhed-blog-grid-btn ritekhed-bgcolor">Read More</a> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Blog Grid -->
+                        </div>
+                        <!-- Blog's -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Main Section -->
+
+            <!-- Main Section -->
+            <div class="ritekhed-main-section ritekhed-testimonial-slider-full">
+                <span class="ritekhed-banner-transparent"></span>
+                <div class="container">
+                    <div class="row">
+                        
+                        <!-- Testimonial -->
+                        <!-- <div class="col-md-12">
+                            <div class="ritekhed-testimonial-slider">
+                                <div class="ritekhed-testimonial-slider-layer">
+                                    <p>Lorem ipsum dolor sit amet, consectet adipiscing elit. Vestibulum a nunc du rabitur dignissim luctus nisi id eu Morbi ePPPPt arcu dui. Proin pel Donec tincidunt</p>
+                                    <div class="clearfix"></div>
+                                    <a href="#" class="ritekhed-testimonial-slider-thumb"><img src="{% static '/sportsfinal/css/extra-images/testimonial-img1.jpg' %}" alt=""></a>
+                                    <div class="ritekhed-testimonial-slider-text">
+                                        <h5>Julia Ann</h5>
+                                        <span>Ceo</span>
+                                    </div>
+                                </div>
+                                <div class="ritekhed-testimonial-slider-layer">
+                                    <p>Lorem ipsum dolor sit amet, consectet adipiscing elit. Vestibulum a nunc du rabitur dignissim luctus nisi id eu Morbi ePPPPt arcu dui. Proin pel Donec tincidunt</p>
+                                    <div class="clearfix"></div>
+                                    <a href="#" class="ritekhed-testimonial-slider-thumb"><img src="{% static '/sportsfinal/css/extra-images/testimonial-img2.jpg' %}" alt=""></a>
+                                    <div class="ritekhed-testimonial-slider-text">
+                                        <h5>Sarena John</h5>
+                                        <span>Co Editor</span>
+                                    </div>
+                                </div>
+                                <div class="ritekhed-testimonial-slider-layer">
+                                    <p>Lorem ipsum dolor sit amet, consectet adipiscing elit. Vestibulum a nunc du rabitur dignissim luctus nisi id eu Morbi ePPPPt arcu dui. Proin pel Donec tincidunt</p>
+                                    <div class="clearfix"></div>
+                                    <a href="#" class="ritekhed-testimonial-slider-thumb"><img src="{% static '/sportsfinal/css/extra-images/testimonial-img3.jpg' %}" alt=""></a>
+                                    <div class="ritekhed-testimonial-slider-text">
+                                        <h5>Jessy Ryder</h5>
+                                        <span>Designer</span>
+                                    </div>
+                                </div>
+                                <div class="ritekhed-testimonial-slider-layer">
+                                    <p>Lorem ipsum dolor sit amet, consectet adipiscing elit. Vestibulum a nunc du rabitur dignissim luctus nisi id eu Morbi ePPPPt arcu dui. Proin pel Donec tincidunt</p>
+                                    <div class="clearfix"></div>
+                                    <a href="#" class="ritekhed-testimonial-slider-thumb"><img src="{% static '/sportsfinal/css/extra-images/testimonial-img1.jpg' %}" alt=""></a>
+                                    <div class="ritekhed-testimonial-slider-text">
+                                        <h5>Julia Ann</h5>
+                                        <span>Ceo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        Testimonial -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Main Section -->
+
+            <!-- Main Section -->
+            <div class="ritekhed-main-section ritekhed-player-grid-full">
+                <div class="container">
+                    <div class="row">
+                        
+                        <!-- Team -->
+                        <div class="col-md-12">
+                            <div class="ritekhed-fancy-title"> <h2>Meet Our Team</h2> </div>
+                            <div class="ritekhed-player ritekhed-player-grid">
+                                <ul class="row">
+                                    <li class="col-md-3">
+                                        <figure><a href="#"><img src="{% static '/sportsfinal/css/extra-images/player-grid-img1.jpg' %}" alt=""><i class="fa fa-link"></i></a><span></span></figure>
+                                        <div class="ritekhed-player-grid-text">
+                                            <!-- <a href="#" class="forward-btn">Forword</a> -->
+                                            <h5><a href="#">Darren Layfield</a></h5>
+                                            <!-- <p>Lorem ipsum dolor sit met, con etur adipiscing elit. Ut c males ante curabitur.</p> -->
+                                        </div>
+                                        <ul class="ritekhed-player-grid-social">
+                                            <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook-square"></a></li>
+                                            <li><a href="https://plus.google.com/" class="ritekhed-colorhover fab fa-google-plus-square"></a></li>
+                                            <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+                                            <li><a href="https://twitter.com/login" class="ritekhed-colorhover fab fa-twitter-square"></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="#"><img src="{% static '/sportsfinal/css/extra-images/player-grid-img2.jpg' %}" alt=""><i class="fa fa-link"></i></a><span></span></figure>
+                                        <div class="ritekhed-player-grid-text">
+                                            <!-- <a href="#" class="forward-btn">Forword</a> -->
+                                            <h5><a href="#">Marlon Samuals</a></h5>
+                                            <!-- <p>Lorem ipsum dolor sit met, con etur adipiscing elit. Ut c males ante curabitur.</p> -->
+                                        </div>
+                                        <ul class="ritekhed-player-grid-social">
+                                            <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook-square"></a></li>
+                                            <li><a href="https://plus.google.com/" class="ritekhed-colorhover fab fa-google-plus-square"></a></li>
+                                            <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+                                            <li><a href="https://twitter.com/login" class="ritekhed-colorhover fab fa-twitter-square"></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="#"><img src="{% static '/sportsfinal/css/extra-images/player-grid-img3.jpg' %}" alt=""><i class="fa fa-link"></i></a><span></span></figure>
+                                        <div class="ritekhed-player-grid-text">
+                                            <!-- <a href="#" class="forward-btn">Forword</a> -->
+                                            <h5><a href="#">Chris Morris</a></h5>
+                                            <!-- <p>Lorem ipsum dolor sit met, con etur adipiscing elit. Ut c males ante curabitur.</p> -->
+                                        </div>
+                                        <ul class="ritekhed-player-grid-social">
+                                            <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook-square"></a></li>
+                                            <li><a href="https://plus.google.com/" class="ritekhed-colorhover fab fa-google-plus-square"></a></li>
+                                            <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+                                            <li><a href="https://twitter.com/login" class="ritekhed-colorhover fab fa-twitter-square"></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="#"><img src="{% static '/sportsfinal/css/extra-images/player-grid-img4.jpg' %}" alt=""><i class="fa fa-link"></i></a><span></span></figure>
+                                        <div class="ritekhed-player-grid-text">
+                                            <!-- <a href="#" class="forward-btn">Forword</a> -->
+                                            <h5><a href="#">Sarena Jullie</a></h5>
+                                            <!-- <p>Lorem ipsum dolor sit met, con etur adipiscing elit. Ut c males ante curabitur.</p> -->
+                                        </div>
+                                        <ul class="ritekhed-player-grid-social">
+                                            <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook-square"></a></li>
+                                            <li><a href="https://plus.google.com/" class="ritekhed-colorhover fab fa-google-plus-square"></a></li>
+                                            <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+                                            <li><a href="https://twitter.com/login" class="ritekhed-colorhover fab fa-twitter-square"></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Team -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Main Section -->
+
+            <!-- Main Section -->
+            <div class="ritekhed-main-section ritekhed-shop-grid-full">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                            <div class="ritekhed-fancy-title"> <h2>OUR FAVOURITE SHOP</h2> </div>
+                            <!-- Shop Grid -->
+                            <div class="ritekhed-shop ritekhed-shop-grid">
+                                <ul class="row">
+                                    <li class="col-md-3">
+                                        <figure><a href="{% url 'shop-grid' %}"><img src="{% static '/sportsfinal/css/extra-images/shop-grid-img1.jpg' %}" alt=""></a></figure>
+                                        <div class="ritekhed-shop-grid-text">
+                                            <h2><a href="{% url 'shop-grid' %}">Atlantic Sneaker</a></h2>
+                                            <span class="price-cart"><del>₹ 899.00</del> ₹ 552.00</span>
+                                            <p>Sparx Men's Sm-323 Dip Canvas Shoes - Black</p>
+                                            <a href="{% url 'shop-grid' %}" class="ritekhed-shop-btn ritekhed-bgcolor ritekhed-color-two">Add To Cart</a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="{% url 'shop-grid' %}"><img src="{% static '/sportsfinal/css/extra-images/shop-grid-img2.jpg' %}" alt=""></a></figure>
+                                        <div class="ritekhed-shop-grid-text">
+                                            <h2><a href="{% url 'shop-grid' %}">Sports T-Shirt</a></h2>
+                                            <span class="price-cart"><del>₹ 550.00</del> ₹ 350.00</span>
+                                            <p>AWG - All Weather Gear Men's Regular fit T-Shirt</p>
+                                            <a href="{% url 'shop-grid' %}" class="ritekhed-shop-btn ritekhed-bgcolor ritekhed-color-two">Add To Cart</a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="{% url 'shop-grid' %}"><img src="{% static '/sportsfinal/css/extra-images/shop-grid-img3.jpg' %}" alt=""></a></figure>
+                                        <div class="ritekhed-shop-grid-text">
+                                            <h2><a href="{% url 'shop-grid' %}">Sports Cup</a></h2>
+                                            <span class="price-cart"><del>₹ 1000.00</del> ₹ 600.00</span>
+                                            <p>WRF CR7 Hand Stich Football Size-05.</p>
+                                            <a href="{% url 'shop-grid' %}" class="ritekhed-shop-btn ritekhed-bgcolor ritekhed-color-two">Add To Cart</a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="{% url 'shop-grid' %}"><img src="{% static '/sportsfinal/css/extra-images/shop-grid-img4.jpg' %}" alt=""></a></figure>
+                                        <div class="ritekhed-shop-grid-text">
+                                            <h2><a href="{% url 'shop-grid' %}">Sports Glasses</a></h2>
+                                            <span class="price-cart"><del>₹ 999.00</del> ₹ 550.00</span>
+                                            <p>Zyaden Red Wraparound Sport Sunglasses 5</p>
+                                            <a href="{% url 'shop-grid' %}" class="ritekhed-shop-btn ritekhed-bgcolor ritekhed-color-two">Add To Cart</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Shop Grid -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Main Section -->
+
+        </div>
+        <!-- Content -->
+
+        <!-- Footer -->
+        <footer id="ritekhed-footer" class="ritekhed-footer-one">
+            <!-- Footer Widget -->
+            <div class="ritekhed-footer-widget">
+                <div class="container">
+                    <div class="row">
+                        <!-- Widget Footer About -->
+                        <aside class="widget col-md-4 widget_footer_about">
+                            <a href="index-2.html" class="footer-logo"><h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>PLANET</b></span> <span class="w3-hide-small w3-text-light-grey">SPORTS</span></h1></a>
+                            <p>This product will help consumer to effectively progress in his interest of sport in multiple ways. The main objective of this project is to provide a platform where vendor can sell their product and user can buy the product. The ground booking and event organization task become less time consuming and less strenuous activity. The participants can participate in the event and hire the guest players. Keep user updated with latest news.</p>
+                            <!-- <ul class="ritekhed-social-network">
+                                <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook"></a></li>
+                                <li><a href="https://twitter.com/login" class="ritekhed-colorhover fab fa-twitter-square"></a></li>
+                                <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+                                <li><a href="https://plus.google.com/" class="ritekhed-colorhover fab fa-google-plus-square"></a></li>
+                            </ul> -->
+                            <ul class="ritekhed-info-list">
+                                <li><i class="fa fa-map-marker-alt"></i> <span>D-Tech Sports Num, Naroda, Ahmedabad</span></li>
+                                <li><i class="fa fa-phone"></i> <span>(+91) 8547632100</span></li>
+                                <li><i class="far fa-envelope"></i> <span><a href="mailto:name@email.com">PlanetSports17@gmail.com</a></span></li>
+                            </ul>
+                        </aside>
+                        <!-- Widget Footer About -->
+                        <!-- Widget Featured News -->
+                        <aside class="widget col-md-4 widget_featured_news">
+                            <div class="footer-widget-title"> <h2>Featured News</h2> </div>
+                            <ul>
+                                <li>
+                                    <span>01</span>
+                                    <h6><a href="#">Brendan Rodgers to raid his former club as he prepares to make a second bid for Celtic's Callum McGregor</a></h6>
+                                    <time datetime="2008-02-14 20:00">23/02/2020</time>
+                                </li>
+                                <li>
+                                    <span>02</span>
+                                    <h6><a href="#">Brendan Rodgers to raid his former club as he prepares to make a second bid for Celtic's Callum McGregor</a></h6>
+                                    <time datetime="2008-02-14 20:00">23/02/2020</time>
+                                </li>
+                                <li>
+                                    <span>03</span>
+                                    <h6><a href="#">Leicester are worried about losing James Maddison to Manchester United in the next transfer window, and are looking for backup.</a></h6>
+                                    <time datetime="2008-02-14 20:00">23/02/2020</time>
+                                </li>
+                            </ul>
+                        </aside>
+                        <!-- Widget Featured News -->
+                        <!-- Widget Gallery -->
+                        <aside class="widget col-md-4 widget_gallery">
+                            <div class="footer-widget-title"> <h2>Flicker Photos</h2> </div>
+                            <ul>
+                                <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-2.jpg' %}" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-3.jpg' %}" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-4.jpg' %}" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-5.jpg' %}" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-6.jpg' %}" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-7.jpg' %}" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-8.jpg' %}" alt=""></a></li>
+                            </ul>
+                        </aside>
+                        <!-- Widget Gallery -->
+                    </div>
+                    <a href="#" class="ritekhed-back-top"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- CopyRight -->
+            <div class="ritekhed-copyright">
+                <div class="container">
+                    <div class="row">
+                        <aside class="col-md-6"><p>© 2020, All Right Reserved - by <a href="index-2.html">Planet Sports</a></p></aside>
+                        <aside class="col-md-6">
+                            <ul class="ritekhed-copyright-link">
+                                <li><a href="#">Terms And Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <!-- CopyRight -->
+
+        </footer>
+        <!-- Footer -->
+    </div>
+
+
+    <!-- LoginModal -->
+    <div class="loginmodal modal fade" id="loginModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="ritekhed-login-box">
+                <a href="#" data-dismiss="modal" class="ritekhed-login-close ritekhed-color"><i class="fa fa-times"></i></a>
+                <h4>Login To Your Account</h4>
+                <form>
+                    <input type="text" value="Enter username*" onblur="if(this.value == '') { this.value ='Enter username*'; }" onfocus="if(this.value =='Enter username*') { this.value = ''; }">
+                    <input type="password" value="Password*" onblur="if(this.value == '') { this.value ='Password*'; }" onfocus="if(this.value =='Password*') { this.value = ''; }">
+                    <a href="#" class="ritekhed-colorhover">Forget Password?</a>
+                    <div class="clearfix"></div>
+                    <label><input type="submit" value="Sign In" class="ritekhed-bordercolor ritekhed-color"></label>
+                </form>
+                <h4>Try Our Socials Also</h4>
+                <ul class="login-network">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                    <li class="ritekhed-twitter"><a href="#"><i class="fab fa-twitter-square"></i> Twitter</a></li>
+                    <li class="ritekhed-google-plus"><a href="#"><i class="fab fa-google-plus-square"></i> Google+</a></li>
+                    <li class="ritekhed-linkedin"><a href="#"><i class="fab fa-linkedin"></i> linkedin</a></li>
+                </ul>
+                <p>Not A Member Yet ? <a href="#" class="ritekhed-color">Sign - Up Now !</a></p>
+            </div>
+        <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!-- SignupModal -->
+    <div class="loginmodal modal fade" id="signupModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="ritekhed-login-box">
+                <a href="#" data-dismiss="modal" class="ritekhed-login-close ritekhed-color"><i class="fa fa-times"></i></a>
+                <h4>Sign Up Now</h4>
+                <form>
+                    <input type="text" value="Enter username*" onblur="if(this.value == '') { this.value ='Enter username*'; }" onfocus="if(this.value =='Enter username*') { this.value = ''; }">
+                    <input type="text" value="Type your password*" onblur="if(this.value == '') { this.value ='Type your password*'; }" onfocus="if(this.value =='Type your password*') { this.value = ''; }">
+                    <input type="text" value="Confirm your password*" onblur="if(this.value == '') { this.value ='Confirm your password*'; }" onfocus="if(this.value =='Confirm your password*') { this.value = ''; }">
+                    <a href="#" class="ritekhed-colorhover">Forget Password?</a>
+                    <div class="clearfix"></div>
+                    <label><input type="submit" value="Sign Up" class="ritekhed-bordercolor ritekhed-color"></label>
+                </form>
+                <h4>Try Our Socials Also</h4>
+                <ul class="login-network">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                    <li class="ritekhed-twitter"><a href="#"><i class="fab fa-twitter-square"></i> Twitter</a></li>
+                    <li class="ritekhed-google-plus"><a href="#"><i class="fab fa-google-plus-square"></i> Google+</a></li>
+                    <li class="ritekhed-linkedin"><a href="#"><i class="fab fa-linkedin"></i> linkedin</a></li>
+                </ul>
+                <p>Not A Member Yet ? <a href="#" class="ritekhed-color">Login - Now !</a></p>
+            </div>
+        <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{% static '/sportsfinal/js/jquery.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/popper.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/slick.slider.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/fancybox.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/isotope.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/smartmenus.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/progressbar.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/counter.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/jquery.countdown.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="{% static '/sportsfinal/js/functions.js' %}"></script>
+</body>
+
+
+<!-- Mirrored from www.rite-tags.com/html/ritekhed/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Oct 2019 11:30:02 GMT -->
+</html>

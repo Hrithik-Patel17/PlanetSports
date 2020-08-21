@@ -1,0 +1,1493 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1024, initial-scale=1.0" />
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static '/sportsfinal/css/main.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static '/sportsfinal/css/multiple-select.css' %}" />
+    <link href="{% static '/sportsfinal/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet" />
+    <link href="{% static '/sportsfinal/css/chosen.css' %}" rel="stylesheet" />
+    <link href="{% static '/sportsfinal/css/topheader.css' %}" rel="stylesheet" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="{% static '/sportsfinal/css/bootstrap-datepicker.css' %}" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"
+    />
+    <link href="{% static '/sportsfinal/css/style.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fontawesome-all.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/slick-slider.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fancybox.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/smartmenus.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/style.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/color.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/responsive.css' %}">
+
+    <script src="{% static '/sportsfinal/js/jquery-1.10.2.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/jquery.multiple.select.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/jquery.numbers.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/jquery.numeric.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/bootstrap-datepicker.js' %}"></script>
+
+    <script src="{% static '/sportsfinal/js/bootstrap-datetimepicker.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/chosen.jquery.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/chosen.jquery.min.js' %}"></script>
+
+    <title>ADD EVENT FORM</title>
+  </head>
+  <body class="home">
+
+    <div class="ritekhed-wrapper">
+        
+        <!-- Header -->
+        <div id="ritekhed-header" class="ritekhed-header-one">
+            
+            <!-- Top Strip -->
+            <div class="ritekhed-top-strip ritekhed-bgcolor-two">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="ritekhed-top-strip-social">
+                                <li><a href="#" class="fab fa-facebook-f"></a></li>
+                                <li><a href="#" class="fab fa-twitter"></a></li>
+                                <li><a href="#" class="fab fa-linkedin-in"></a></li>
+                                <li><a href="#" class="fab fa-google-plus-g"></a></li>
+                                <li><a href="#" class="fab fa-dribbble"></a></li>
+                            </ul>
+                            <ul class="ritekhed-user-section">
+                                <li><i class="fa fa-globe"></i> <a href="#">Support</a></li>
+                                <li><i class="fab fa-opencart"></i> <a href="#" class="ritekhed-open-cart">Cart (0)</a>
+                                    <div class="ritekhed-cart-box">
+                                        <h2>You have 2 items in the cart</h2>
+                                        <ul>
+                                            <li>
+                                                <figure>
+                                                    <a href="checkout.html"><img src="{% static '/sportsfinal/css/extra-images/cartbox-1.png' %}" alt=""></a>
+                                                </figure>
+                                                <div class="ritekhed-cartbox-text">
+                                                    <h6><a href="checkout.html">Key Management Model The 60+ Models</a></h6>
+                                                    <div class="ritekhed-rating"><span class="ritekhed-rating-box eight-percent"></span></div>
+                                                    <span class="ritekhed-cartbox-price ritekhed-color">$35.99 <small>$43.00</small></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <a href="checkout.html"><img src="{% static '/sportsfinal/css/extra-images/cartbox-2.png' %}" alt=""></a>
+                                                </figure>
+                                                <div class="ritekhed-cartbox-text">
+                                                    <h6><a href="checkout.html">Pyramid Principle: Logic Writing &amp; Thinking</a></h6>
+                                                    <div class="ritekhed-rating"><span class="ritekhed-rating-box ten-percent"></span></div>
+                                                    <span class="ritekhed-cartbox-price ritekhed-color">$21.00</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <h5>Subtotal <span class="ritekhed-color">$1343</span></h5>
+                                        <div class="ritekhed-cart-link"><a href="checkout.html" class="ritekhed-cartbox-btn ritekhed-bgcolorhover"><i class="flaticon-tool"></i> Go to Checkout</a></div>
+                                    </div>
+                                </li>
+                                <li><i class="far fa-user"></i> <a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                <li><i class="fa fa-sign-in-alt"></i> <a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Strip -->
+
+            <!-- Main Header -->
+            <div class="ritekhed-main-header ritekhed-border-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="index-2.html" class="ritekhed-logo"> <img src="{% static '/sportsfinal/css/images/logo.png' %}" alt=""> </a>
+                            <div class="ritekhed-right-head">
+                                <span class="ritekhed-menu-link">
+                                    <span class="menu-bar"></span>
+                                    <span class="menu-bar"></span>
+                                    <span class="menu-bar"></span>
+                                </span>
+                                <nav id="main-nav">
+                                    <ul id="main-menu" class="sm sm-blue">
+                                        <li class="active"><a href="index-2.html">Home</a></li>
+                                        <li><a href="#">Features</a>
+                                            <ul>
+                                                <li><a href="EventOrganizations.html">EventOrganizations</a></li>
+                                                <li><a href="CoachingInstitute.html">CoachingInstitute</a></li>
+                                                <li><a href="RepairingZone.html">RepairingZone</a></li> 
+                                                <li><a href="all-fixture.html">Fixture All Matches</a></li>
+                                                <li><a href="fixture-list.html">Fixture List</a></li>
+                                                <li><a href="fixture-detail.html">Fixture Detail</a></li>
+                                                <li><a href="gallery-classic.html">Gallery Classic</a></li>
+                                                <li><a href="gallery-simple.html">Gallery Simple</a></li>
+                                                <li><a href="404.html">404 Error Page</a></li>
+                                                <li><a href="login-register.html">Login Register</a></li>
+                                                <li><a href="search-result.html">Search Result</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Players</a>
+                                            <ul>
+                                                <li><a href="#">Player Grid</a>
+                                                    <ul>
+                                                        <li><a href="player-grid.html">Player Grid W/O/S</a></li>
+                                                        <li><a href="player-grid-wls.html">Player Grid W/L/S</a></li>
+                                                        <li><a href="player-grid-wrs.html">Player Grid W/R/S</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Player List</a>
+                                                    <ul>
+                                                        <li><a href="player-list.html">Player List W/O/S</a></li>
+                                                        <li><a href="player-list-wls.html">Player List W/L/S</a></li>
+                                                        <li><a href="player-list-wrs.html">Player List W/R/S</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="player-detail.html">Player Detail</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Our News</a>
+                                            <ul>
+                                                <li><a href="#">Blog Grid</a>
+                                                    <ul>
+                                                        <li><a href="blog-grid.html">Blog Grid W/O/S</a></li>
+                                                        <li><a href="blog-grid-wls.html">Blog Grid W/L/S</a></li>
+                                                        <li><a href="blog-grid-wrs.html">Blog Grid W/R/S</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Blog Large</a>
+                                                    <ul>
+                                                        <li><a href="blog-large-wos.html">Blog Large W/O/S</a></li>
+                                                        <li><a href="blog-large-wls.html">Blog Large W/L/S</a></li>
+                                                        <li><a href="blog-large.html">Blog Large W/R/S</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Blog Detail</a>
+                                                    <ul>
+                                                        <li><a href="blog-detail.html">Blog Detail W/Thumb</a></li>
+                                                        <li><a href="blog-detail-wsound.html">Blog W/SounCloud</a></li>
+                                                        <li><a href="blog-detail-wvid.html">Blog Detail W/Video</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Our Shop</a>
+                                            <ul>
+                                                <li><a href="shop-grid.html">Shop Grid W/O/S</a></li>
+                                                <li><a href="shop-grid-wls.html">Shop Grid W/L/S</a></li>
+                                                <li><a href="shop-grid-wrs.html">Shop Grid W/R/S</a></li>
+                                                <li><a href="shop-detail.html">Shop Detail</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Header -->
+
+        </div>
+        <!-- Header -->
+      <!--Form Start-->
+      <form action="{% url 'AddEventdata' %}" enctype="multipart/form-data" id="VendorsNew" method="post">
+      {% csrf_token %}
+        <input
+          name="__RequestVerificationToken"
+          type="hidden"
+          value="UZrmmUjTZ_wIYs_w6TpQ_P8Z_1tmvt7Kv5vqqURV7j3f6nzGmzGLUvrDjDBDEGibupLontG8DCw3onydR-Wp_x4XKnmRv8Bf9dUsZP7nWKBIAhuyXzLl1PWEOJ7NNatkI7VFZUz7HTgoOO2jxbF2mSHplSfc2wxQ44EF9UxpZPo1"/>
+        <div
+          id="spinner"
+          style="z-index: 10; margin-top: 100px; position: fixed; margin-left: 30%">
+           <!-- <p style="vertical-align: middle; text-align: center;">
+          <img src="/Content/images/please_wait.gif" alt=""/>
+      </p> -->
+        </div>
+        <div class="row" style="z-index: 1; position: relative">
+          <div class="col-md-12" style="text-align: right">
+            <span style="color: Red; font-size: 14px; padding-left: 70%"
+              >(*) Fields are Mandatory</span
+            >
+          </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div
+                    class="well bs-component"
+                    style="text-align: center; padding: 4px; background-color: #ffdc11;
+                          color: #fff; margin: 10px;"
+                  >
+                    <div class="form-horizontal">
+                      <fieldset>
+                                  <label style="font-size:medium">
+                                      Add Event Mandatory  </label>
+                              </fieldset>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="col-lg-4">
+                    <div class="well bs-component">
+                      <div class="form-horizontal">
+                        <fieldset>
+                            <select name="role" style="background-color:white;">
+                                <option class="hidden">-----Select Role----</option>
+                                <option>customer2</option>
+                                <option>vendor2</option>
+                            </select>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="well bs-component">
+                      <div class="form-horizontal">
+                        <fieldset>
+                          <label>
+                           Sports Event Categories<span style="color: Red">(*)</span>
+                            </label>
+                          
+                          <div class="form-group">
+                            <div class="col-lg-10">
+                              <select
+                                class="form-control"
+                                id="fk_intsSportsEventCategories"
+                                name="fk_intSportsEventCategories"
+                                ><option value="">--- Select ---</option>
+                                <option value="1">IndoorEvent</option>
+                                <option value="2">OutdoorEvent</option>
+                                <option value="3">Fitness</option>                                
+                              </select>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>                  
+                <div class="col-lg-12">
+                  <div class="col-lg-4">
+                    <div class="well bs-component">
+                      <div class="form-horizontal">
+                        <fieldset>
+                          <div class="form-group">
+                            <div class="col-lg-10">
+                              <label>
+                                Country<span style="color: Red">
+                                  (*)</span
+                                ></label
+                              >
+                              <select
+                                class="form-control"
+                                id="str_country"
+                                name="str_country"
+                                ><option value="">--- Select ---</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Belarus">Belarus</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bermuda">Bermuda</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Bosnia And Herzegovina"
+                                  >Bosnia And Herzegovina</option
+                                >
+                                <option value="Botswana">Botswana</option>
+                                <option value="Bouvet Island"
+                                  >Bouvet Island</option
+                                >
+                                <option value="Brazil">Brazil</option>
+                                <option value="British Indian Ocean Territory"
+                                  >British Indian Ocean Territory</option
+                                >
+                                <option value="Brunei Darussalam"
+                                  >Brunei Darussalam</option
+                                >
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Burkina Faso"
+                                  >Burkina Faso</option
+                                >
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Cape Verde">Cape Verde</option>
+                                <option value="Cayman Islands"
+                                  >Cayman Islands</option
+                                >
+                                <option value="Central African Republic"
+                                  >Central African Republic</option
+                                >
+                                <option value="Chad">Chad</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Christmas Island"
+                                  >Christmas Island</option
+                                >
+                                <option value="Cocos (keeling) Islands"
+                                  >Cocos (keeling) Islands</option
+                                >
+                                <option value="Colombia">Colombia</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="Congo">Congo</option>
+                                <option value="Congo">Congo</option>
+                                <option value="Cook Islands"
+                                  >Cook Islands</option
+                                >
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Ivory Coast">Ivory Coast</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Cyprus">Cyprus</option>
+                                <option value="Czech Republic"
+                                  >Czech Republic</option
+                                >
+                                <option value="Denmark">Denmark</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="Dominican Republic"
+                                  >Dominican Republic</option
+                                >
+                                <option value="East Timor">East Timor</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Equatorial Guinea"
+                                  >Equatorial Guinea</option
+                                >
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Falkland Islands (malvinas)"
+                                  >Falkland Islands (malvinas)</option
+                                >
+                                <option value="Faroe Islands"
+                                  >Faroe Islands</option
+                                >
+                                <option value="Fiji">Fiji</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="French Guiana"
+                                  >French Guiana</option
+                                >
+                                <option value="French Polynesia"
+                                  >French Polynesia</option
+                                >
+                                <option value="French Southern Territories"
+                                  >French Southern Territories</option
+                                >
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Gibraltar">Gibraltar</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Greenland">Greenland</option>
+                                <option value="Grenada">Grenada</option>
+                                <option value="Guadeloupe">Guadeloupe</option>
+                                <option value="Guam">Guam</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guinea-bissau"
+                                  >Guinea-bissau</option
+                                >
+                                <option value="Guyana">Guyana</option>
+                                <option value="Haiti">Haiti</option>
+                                <option
+                                  value="Heard Island And Mcdonald Islands"
+                                  >Heard Island And Mcdonald Islands</option
+                                >
+                                <option value="Vatican City"
+                                  >Vatican City</option
+                                >
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hong Kong">Hong Kong</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option selected="selected" value="India"
+                                  >India</option
+                                >
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Iran">Iran</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kazakstan">Kazakstan</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Kiribati">Kiribati</option>
+                                <option value="Korea (North)"
+                                  >Korea (North)</option
+                                >
+                                <option value="Korea (South)"
+                                  >Korea (South)</option
+                                >
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                <option value="Laos">Laos</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libyan Arab Jamahiriya"
+                                  >Libyan Arab Jamahiriya</option
+                                >
+                                <option value="Liechtenstein"
+                                  >Liechtenstein</option
+                                >
+                                <option value="Lithuania">Lithuania</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                                <option value="Macau">Macau</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marshall Islands"
+                                  >Marshall Islands</option
+                                >
+                                <option value="Martinique">Martinique</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Mayotte">Mayotte</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Monaco">Monaco</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Myanmar">Myanmar</option>
+                                <option value="Namibia">Namibia</option>
+                                <option value="Nauru">Nauru</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="Netherlands Antilles"
+                                  >Netherlands Antilles</option
+                                >
+                                <option value="New Caledonia"
+                                  >New Caledonia</option
+                                >
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Niue">Niue</option>
+                                <option value="Norfolk Island"
+                                  >Norfolk Island</option
+                                >
+                                <option value="Northern Mariana Islands"
+                                  >Northern Mariana Islands</option
+                                >
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Palau">Palau</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Papua New Guinea"
+                                  >Papua New Guinea</option
+                                >
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Pitcairn">Pitcairn</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Reunion">Reunion</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russian Federation"
+                                  >Russian Federation</option
+                                >
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Saint Helena"
+                                  >Saint Helena</option
+                                >
+                                <option value="Saint Kitts And Nevis"
+                                  >Saint Kitts And Nevis</option
+                                >
+                                <option value="Saint Lucia">Saint Lucia</option>
+                                <option value="Saint Pierre And Miquelon"
+                                  >Saint Pierre And Miquelon</option
+                                >
+                                <option value="Saint Vincent And The Grenadines"
+                                  >Saint Vincent And The Grenadines</option
+                                >
+                                <option value="Samoa">Samoa</option>
+                                <option value="San Marino">San Marino</option>
+                                <option value="Sao Tome And Principe"
+                                  >Sao Tome And Principe</option
+                                >
+                                <option value="Saudi Arabia"
+                                  >Saudi Arabia</option
+                                >
+                                <option value="Senegal">Senegal</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Sierra Leone"
+                                  >Sierra Leone</option
+                                >
+                                <option value="Singapore">Singapore</option>
+                                <option value="Slovakia">Slovakia</option>
+                                <option value="Slovenia">Slovenia</option>
+                                <option value="Solomon Islands"
+                                  >Solomon Islands</option
+                                >
+                                <option value="Somalia">Somalia</option>
+                                <option value="South Africa"
+                                  >South Africa</option
+                                >
+                                <option
+                                  value="South Georgia &amp; South Sandwich Is."
+                                  >South Georgia &amp; South Sandwich
+                                  Is.</option
+                                >
+                                <option value="Spain">Spain</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Svalbard And Jan Mayen"
+                                  >Svalbard And Jan Mayen</option
+                                >
+                                <option value="Swaziland">Swaziland</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Syrian Arab Republic"
+                                  >Syrian Arab Republic</option
+                                >
+                                <option value="Tajikistan">Tajikistan</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tokelau">Tokelau</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Trinidad And Tobago"
+                                  >Trinidad And Tobago</option
+                                >
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Turkmenistan"
+                                  >Turkmenistan</option
+                                >
+                                <option value="Turks And Caicos Islands"
+                                  >Turks And Caicos Islands</option
+                                >
+                                <option value="Tuvalu">Tuvalu</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Arab Emirates"
+                                  >United Arab Emirates</option
+                                >
+                                <option value="United Kingdom"
+                                  >United Kingdom</option
+                                >
+                                <option
+                                  value="United States Minor Outlying Islands"
+                                  >United States Minor Outlying Islands</option
+                                >
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Viet Nam">Viet Nam</option>
+                                <option value="Wallis And Futuna"
+                                  >Wallis And Futuna</option
+                                >
+                                <option value="Western Sahara"
+                                  >Western Sahara</option
+                                >
+                                <option value="Yemen">Yemen</option>
+                                <option value="Yugoslavia">Yugoslavia</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                              </select>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+
+                  <!-- <div class="col-lg-4">
+                    <div class="well bs-component">
+                      <div class="form-horizontal">
+                        <fieldset>
+                          <label id="PAN" runat="server">
+                            PAN No.<span style="color: Red"> (*)</span></label
+                          >
+                          <div class="form-group">
+                            <div class="col-lg-10">
+                              <input
+                                class="form-control"
+                                id="strPANNo"
+                                name="strPANNo"
+                                type="text"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class="col-lg-4">
+                    <div class="well bs-component">
+                      <div class="form-horizontal">
+                        <fieldset>
+                          <label id="Date" runat="server">
+                            Start Date <span style="color: Red"> (*)</span></label>
+                          <div class="form-group">
+                            <div class="col-lg-10">
+                              <input type="text" id="datepicker">
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="well bs-component">
+                    <div class="form-horizontal">
+                      <fieldset>
+                        <label id="Date" runat="server">
+                          End Date <span style="color: Red"> (*)</span></label>
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <input type="text" id="datepicker">
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                
+                <div class="col-lg-12">
+                  <div class="col-lg-4">
+                    <div class="well bs-component">
+                      <div class="form-horizontal">
+                        <fieldset>
+                          <label>
+                            Games<span style="color: Red">
+                              (*)</span
+                            ></label
+                          >
+                          <div class="form-group">
+                            <div class="col-lg-10">
+                              <select
+                                class="form-control"
+                                id="int_fk_Games"
+                                name="int_fk_Games"
+                                ><option value="">--- Select ---</option>
+                                <option value="1">Cricket</option>
+                                <option value="2">Badminton</option>
+                                <option value="3">VollyBall</option>
+                                <option value="4">BasketBall</option>
+                                <option value="5">Hockey</option>
+                                <option value="6">TableTennis</option>
+                                <option value="7">Chess</option>
+                                <option value="8">Swimming</option>
+                                <option value="9">Rugby</option>
+                                <option value="10">Squash</option>
+                                <option value="11">Snooker</option>
+                                <option value="12">Billiards/Pool</option>
+                                <option value="13">Bowling</option>
+                                <option value="14">Boxing</option>
+                                <option value="15">Archery</option>
+                                <option value="16">Skateboarding</option>
+                                <option value="17">BaseBall</option>
+                                <option value="18">Karate</option>
+                                <option value="19">Wrestling</option>
+                                <option value="20">Running</option>
+                                <option value="21">Judo</option>
+                                <option value="22">Golf</option>
+                                <option value="23">Football/Soccer</option>
+                                <option value="24">Gymnastics</option>
+                                <option value="25">Yoga</option>
+                                <option value="26">CarRacing</option>
+                                <option value="27">Climbing</option>
+                                <option value="28">Shooting</option>
+                              </select>
+                              </select>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>                                    
+                <div class="col-lg-12">
+                  <div
+                    class="well bs-component"
+                    style="text-align: center; padding: 4px; background-color: #ffdc11;
+                          color: #fff; margin: 10px;"
+                  >
+                    <div class="form-horizontal">
+                      <fieldset>
+                        <label style="font-size:medium">
+                          Details</label
+                        >
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="well bs-component">
+                    <div
+                      class="form-horizontal"
+                      style="border-right: 1px solid #999; height:380px"
+                    >
+                      <fieldset>
+                        <label>
+                          Address<span style="color: Red"> (*)</span></label
+                        >
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <textarea
+                              class="form-control"
+                              cols="20"
+                              id="strCorrespondenceAddress"
+                              name="strCorrespondenceAddress"
+                              rows="2"
+                            ></textarea>
+                            <label> </label>
+                          </div>
+                        </div>
+                        <label> City<span style="color: Red"> </span></label>
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <input
+                              class="form-control"
+                              id="str_city"
+                              name="str_city"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                        </div>
+                        <label>
+                          State
+                          <span id="State" style="color: Red"> (*)</span></label
+                        >
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <select
+                              class="form-control"
+                              id="str_state"
+                              name="str_state"
+                              ><option value="">--- Select ---</option>
+                              <option value="Andaman and Nicobar"
+                                >Andaman and Nicobar</option
+                              >
+                              <option value="Andhra Pradesh"
+                                >Andhra Pradesh</option
+                              >
+                              <option value="Arunachal Pradesh"
+                                >Arunachal Pradesh</option
+                              >
+                              <option value="Assam">Assam</option>
+                              <option value="Bihar">Bihar</option>
+                              <option value="Chandigarh">Chandigarh</option>
+                              <option value="Chhattisgarh">Chhattisgarh</option>
+                              <option value="Dadra and Nagar Haveli"
+                                >Dadra and Nagar Haveli</option
+                              >
+                              <option value="Daman and Diu"
+                                >Daman and Diu</option
+                              >
+                              <option value="Delhi">Delhi</option>
+                              <option value="Goa">Goa</option>
+                              <option value="Gujarat">Gujarat</option>
+                              <option value="Haryana">Haryana</option>
+                              <option value="Himachal Pradesh"
+                                >Himachal Pradesh</option
+                              >
+                              <option value="Jammu and Kashmir"
+                                >Jammu and Kashmir</option
+                              >
+                              <option value="Jharkhand">Jharkhand</option>
+                              <option value="Karnataka">Karnataka</option>
+                              <option value="Kerala">Kerala</option>
+                              <option value="Lakshadweep">Lakshadweep</option>
+                              <option value="Madhya Pradesh"
+                                >Madhya Pradesh</option
+                              >
+                              <option value="Maharashtra">Maharashtra</option>
+                              <option value="Manipur">Manipur</option>
+                              <option value="Meghalaya">Meghalaya</option>
+                              <option value="Mizoram">Mizoram</option>
+                              <option value="Nagaland">Nagaland</option>
+                              <option value="Odisha">Odisha</option>
+                              <option value="Puducherry">Puducherry</option>
+                              <option value="Punjab">Punjab</option>
+                              <option value="Rajasthan">Rajasthan</option>
+                              <option value="Sikkim">Sikkim</option>
+                              <option value="Tamil Nadu">Tamil Nadu</option>
+                              <option value="Telangana">Telangana</option>
+                              <option value="Tripura">Tripura</option>
+                              <option value="Uttar Pradesh"
+                                >Uttar Pradesh</option
+                              >
+                              <option value="Uttarakhand">Uttarakhand</option>
+                              <option value="West Bengal">West Bengal</option>
+                              <option value="Ladakh">Ladakh</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <label>
+                          Country <span style="color: Red"> (*)</span></label
+                        >
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <input
+                              class="form-control"
+                              id="country"
+                              name="country"
+                              readonly="readonly"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                        </div>
+
+                        <label>
+                          Pin
+                          <span id="Pin" style="color: Red"> (*)</span></label
+                        >
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <input
+                              class="form-control"
+                              id="str_pin"
+                              name="str_pin"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3">
+                  <div class="well bs-component">
+                    <div
+                      class="form-horizontal"
+                      style="border-right: 1px solid #999; height:380px"
+                    >
+                      <fieldset>
+                        <label>
+                          STD Code with Phone No.<span
+                            id="STD"
+                            style="color: Red"
+                          >
+                            (*)</span
+                          ></label
+                        >
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <input
+                              class="form-control"
+                              id="strPhone1"
+                              name="strPhone1"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                        </div>
+                    
+                        <label> Website</label>
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <input
+                              class="form-control"
+                              id="strWebsite1"
+                              name="strWebsite1"
+                              type="text"
+                              value=""
+                            />
+                            <span
+                              class="field-validation-valid text-danger"
+                              data-valmsg-for="strWebsite1"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <label>
+                          Mobile<span style="color: Red"> (*)</span></label
+                        >
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <input
+                              class="form-control"
+                              id="strMobile"
+                              name="strMobile"
+                              type="text"
+                              value=""
+                            />
+                            <span
+                              class="field-validation-valid text-danger"
+                              data-valmsg-for="strMobile"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+                        </div>
+                        <label>
+                          E-mail<span style="color: Red"> (*)</span></label
+                        >
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <input
+                              class="form-control"
+                              id="strEmail"
+                              name="strEmail"
+                              type="text"
+                              value=""
+                            />
+                            <span
+                              class="field-validation-valid text-danger"
+                              data-valmsg-for="strEmail"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3">
+                  <div class="well bs-component">
+                    <div
+                      class="form-horizontal"
+                      style="border-right: 1px solid #999; height:380px"
+                    >
+                      <fieldset>
+                        <label>
+                          Name of Contact Person<span style="color: Red">
+                            (*)</span
+                          ></label
+                        >
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <input
+                              class="form-control"
+                              id="strNameContactPerson"
+                              name="strNameContactPerson"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                        </div>
+                        <label>
+                          Designation of Contact Person<span style="color: Red">
+                            (*)</span
+                          ></label
+                        >
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <input
+                              class="form-control"
+                              id="strDesignationofContactPerson"
+                              name="strDesignationofContactPerson"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                        </div>
+
+                        <label>
+                         
+
+                        <label>
+                          Brief Description of Your Event</label
+                        >
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <textarea
+                              class="form-control"
+                              cols="20"
+                              id="str_Eventdesc"
+                              name="str_Eventdesc"
+                              rows="2"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3" style="height:430px">
+                  <div class="well bs-component">
+                    <div class="form-horizontal" style="height: 300px">
+                      <fieldset>
+                        <label>
+                          Type of Items Interested for Supply/ service<span
+                            style="color: Red"
+                          >
+                            (*)</span
+                          ></label
+                        ><br />
+
+                        <div class="form-group">
+                          <div class="col-lg-10">
+                            <select
+                              id="strRegistrationApplied"
+                              multiple="multiple"
+                              name="strRegistrationApplied"
+                              ><option value="1">Capital Item</option>
+                              <option value="2">ABRASIVES</option>
+                              <option value="3"
+                                >AUTOMOTIVE&#160;CONSUMABLES</option
+                              >
+                              <option value="4"
+                                >BEARING,BUSHINGS&#160;AND&#160;BELTINGS</option
+                              >
+                              <option value="5">BUILDING&#160;MATERIALS</option>
+                              <option value="6"
+                                >DRILLING&#160;ACCESSORIES,SURVEY,GEOLOGICAL,&#160;FOUNDRY&#160;IT</option
+                              >
+                              <option value="7"
+                                >CHEMICALS,GASES&#160;AND&#160;CHEMICAL&#160;PRODUCT,LABORATORY&#160;IT</option
+                              >
+                              <option value="8"
+                                >COMMISSARY&#160;AND&#160;JANITORIAL&#160;SUPPLIES</option
+                              >
+                              <option value="9"
+                                >ELECT.&amp;&#160;ELCTRONIC&#160;COMMODITIES(GENERAL)</option
+                              >
+                              <option value="10"
+                                >ENAMELS,PAINTS,VARNISHES&#160;&amp;&#160;THINNERS</option
+                              >
+                              <option value="11">EXPLOSIVES</option>
+                              <option value="12"
+                                >FASTNERS&#160;&amp;&#160;HARDWARE</option
+                              >
+                              <option value="13"
+                                >Item&#160;group&#160;Category&#160;Missing</option
+                              >
+                              <option value="14"
+                                >HAND&#160;TOOLS,&#160;CUTTING&#160;TOOLS,&#160;TOOLS&#160;&#160;&amp;&#160;TACKLES</option
+                              >
+                              <option value="15"
+                                >MEDICINE&#160;&amp;&#160;HOSPITAL&#160;ITEMS</option
+                              >
+                              <option value="16"
+                                >HOSE&#160;AND&#160;HOSE&#160;FITTINGS</option
+                              >
+                              <option value="17"
+                                >INSULATION&#160;MATERIAL</option
+                              >
+                              <option value="18">METALS&#160;FERROUS</option>
+                              <option value="19"
+                                >METALS&#160;NON-FERROUS</option
+                              >
+                              <option value="20"
+                                >OIL,FUELS,GREASES&#160;AND&#160;LUBRICANTS</option
+                              >
+                              <option value="21"
+                                >PACKING&#160;SHEETS,GASKETS&#160;AND&#160;OIL&#160;SEALS,&#160;&#39;O&#39;&#160;RINGS</option
+                              >
+                              <option value="22"
+                                >PIPES&#160;&amp;&#160;PIPE&#160;FITTINGS</option
+                              >
+                              <option value="23">REFRACTORIES</option>
+                              <option value="24"
+                                >ROPE,CHAINS,TACKLES,FITTINGS&#160;AND&#160;MATERIAL&#160;HANDLING</option
+                              >
+                              <option value="25"
+                                >STATIONERY,PRINTING&#160;&amp;&#160;PHOTOGRAPHIC&#160;MATERIALS</option
+                              >
+                              <option value="26"
+                                >SAFETY&#160;AND&#160;FIRE&#160;FIGHTING&#160;EQUIPT.</option
+                              >
+                              <option value="27"
+                                >TEXTILES&#160;&amp;&#160;CLOTHING&#160;MATERIALS</option
+                              >
+                              <option value="28">TIMBERS</option>
+                              <option value="29"
+                                >VALVES&#160;AND&#160;VALVE&#160;PARTS</option
+                              >
+                              <option value="30"
+                                >WELDING&#160;AND&#160;METALLISING&#160;STORES</option
+                              >
+                              <option value="31">INSTRUMENTATION</option>
+                              <option value="32"
+                                >PUMPS&#160;&amp;&#160;PUMPS&#160;SPARES</option
+                              >
+                              <option value="33"
+                                >COMPRESSOR&#160;&amp;&#160;COMPRESSOR&#160;SPARES</option
+                              >
+                              <option value="34"
+                                >FANS&#160;AND&#160;BLOWERS</option
+                              >
+                              <option value="35"
+                                >MECHANICAL&#160;POWER&#160;TRANSMISSIONS</option
+                              >
+                              <option value="36"
+                                >FILTERING,MIXING&amp;SEPARATING&#160;DEVICES</option
+                              >
+                              <option value="37"
+                                >GENERATORS&#160;AND&#160;MOTORS</option
+                              >
+                              <option value="38"
+                                >ELECTRICAL&#160;PANELS&#160;&amp;&#160;CONTACTORS</option
+                              >
+                              <option value="39"
+                                >ELECTRICAL&#160;EQUIPMENTS</option
+                              >
+                              <option value="40"
+                                >CRUSHING&#160;AND&#160;GRINDING&#160;EQUIPT&#160;SPARES</option
+                              >
+                              <option value="41"
+                                >WATER TREAT MENT PLANT EQUIPMENT &amp;
+                                SPARES</option
+                              >
+                              <option value="42"
+                                >HEAT&#160;EXCHANGERS,DRYERS,&#160;COOLING&#160;TOWERS</option
+                              >
+                              <option value="43">TURBINES</option>
+                              <option value="44"
+                                >INTERNAL&#160;COMBUSTION&#160;ENGINES&#160;&amp;&#160;SPARES</option
+                              >
+                              <option value="45"
+                                >BOILERS&#160;AND&#160;FURNACES</option
+                              >
+                              <option value="46"
+                                >GARAGE&#160;EQUIPT.&#160;AND&#160;AUTO&#160;ELECTR</option
+                              >
+                              <option value="47"
+                                >MACHINE&#160;SHOP&#160;EQUIPMENTS&#160;&amp;&#160;SPARES</option
+                              >
+                              <option value="48"
+                                >WELDING&#160;EQUIPMENTS&#160;&amp;&#160;ACCESSORIES</option
+                              >
+                              <option value="49"
+                                >COMMUNICATION&#160;EQUIPMENTS</option
+                              >
+                              <option value="50"
+                                >MINE&#160;CAR&#160;&#160;&amp;&#160;ACCESSORIES</option
+                              >
+                              <option value="51">AUTOMOTIVES</option>
+                              <option value="52"
+                                >EARTH&#160;MOVING&#160;EQUIPMENTS</option
+                              >
+                              <option value="53"
+                                >EOT&#160;CRANE&#160;&amp;&#160;ACCESSORIES</option
+                              >
+                              <option value="54"
+                                >DRILLING&#160;AND&#160;BLASTING</option
+                              >
+                              <option value="55"
+                                >CONVEYING&#160;AND&#160;HOISTING&#160;EQUIPME</option
+                              >
+                              <option value="56"
+                                >AIR&#160;CONDITIONING&#160;AND&#160;REFRIGERATION</option
+                              >
+                              <option value="57"
+                                >COMPUTER&#160;&amp;&#160;IT&#39;S&#160;SPARES</option
+                              >
+                              <option value="58"
+                                >LAB&#160;EQUIPMENTS,INSTRUMENTS&amp;APPARATUS</option
+                              >
+                              <option value="59"
+                                >SAFETY&#160;AND&#160;FIRE&#160;FIGHTING&#160;EQUIP</option
+                              >
+                              <option value="60">OSP&#160;CONTRACTS</option>
+                            </select>
+                            <input
+                              id="hidstrRegistrationApplied"
+                              name="hidstrRegistrationApplied"
+                              type="hidden"
+                              value=""
+                            />
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div
+                    class="well bs-component"
+                    style="text-align: center; padding: 4px; background-color: #ffdc11;
+                          color: #fff; margin: 10px;"
+                  >
+                    <div class="form-horizontal">
+                      <fieldset>
+                        <label style="font-size:medium"> &nbsp;</label>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12"></div>
+
+                <!-- <div class="col-lg-12" style="padding-top: 10px">
+                  <script type="text/javascript">
+                    var a = Math.ceil(Math.random() * 10);
+                    var b = Math.ceil(Math.random() * 10);
+                    var c = a + b;
+                    function CaptchaRoni() {
+                      document.write("What is " + a + " + " + b + " ? ");
+                      document.write(
+                        "<input id='CaptchaRoniInput' type='text' maxlength='2' size='2'/>"
+                      );
+                    }
+                    function ValidCaptchaRoni() {
+                      var d = document.getElementById("CaptchaRoniInput").value;
+                      if (d == c) return true;
+                      return false;
+                    }
+                  </script>
+                  Are you human ? <span style="color: Red"> (*)</span><br />
+                  <script type="text/javascript">
+                    CaptchaRoni();
+                  </script>
+                </div> -->
+                <div class="col-lg-12" style="padding-top: 10px">
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-5">
+                      <button
+                        type="submit"
+                        class="btn btn-primary"
+                        onclick="return error()"
+                      >
+                        Submit
+                      </button>
+
+                      <a class="btn btn-default" href="/Home">Cancel</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div>
+                <label>
+                  Note: Tenders are also available at
+                  <a
+                    style="color: Blue"
+                    target="_blank"
+                    href="http://www.eprocure.gov.in/cppp"
+                  >
+                    http://www.eprocure.gov.in/cppp</a
+                  ></label
+                >
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!--Form End -->
+      <script src="{% static '/sportsfinal/js/VendorNew.js' %}"></script>
+    </div>
+        <!-- Footer -->
+        <footer id="ritekhed-footer" class="ritekhed-footer-one">
+          <!-- Footer Widget -->
+          <div class="ritekhed-footer-widget">
+              <div class="container">
+                  <div class="row">
+                      <!-- Widget Footer About -->
+                      <aside class="widget col-md-4 widget_footer_about">
+                          <a href="index-2.html" class="footer-logo"><img src="{% static '/sportsfinal/css/images/footer-logo.png' %}" alt=""></a>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elUt ac malesuada ante.Sed gravida, ur quis tempus sollicitudin, tellus urna</p>
+                          <ul class="ritekhed-social-network">
+                              <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook"></a></li>
+                              <li><a href="https://twitter.com/login" class="ritekhed-colorhover fab fa-twitter-square"></a></li>
+                              <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+                              <li><a href="https://plus.google.com/" class="ritekhed-colorhover fab fa-google-plus-square"></a></li>
+                          </ul>
+                          <ul class="ritekhed-info-list">
+                              <li><i class="fa fa-map-marker-alt"></i> <span>9907 Salford road, east London Uk 2807</span></li>
+                              <li><i class="fa fa-phone"></i> <span>(+92) 123 45 678 - 987 65 432</span></li>
+                              <li><i class="far fa-envelope"></i> <span><a href="mailto:name@email.com">info@example.com</a></span></li>
+                          </ul>
+                      </aside>
+                      <!-- Widget Footer About -->
+                      <!-- Widget Featured News -->
+                      <aside class="widget col-md-4 widget_featured_news">
+                          <div class="footer-widget-title"> <h2>Featured News</h2> </div>
+                          <ul>
+                              <li>
+                                  <span>01</span>
+                                  <h6><a href="#">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</a></h6>
+                                  <time datetime="2008-02-14 20:00">December 29, 2017</time>
+                              </li>
+                              <li>
+                                  <span>02</span>
+                                  <h6><a href="#">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</a></h6>
+                                  <time datetime="2008-02-14 20:00">December 29, 2017</time>
+                              </li>
+                              <li>
+                                  <span>03</span>
+                                  <h6><a href="#">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</a></h6>
+                                  <time datetime="2008-02-14 20:00">December 29, 2017</time>
+                              </li>
+                          </ul>
+                      </aside>
+                      <!-- Widget Featured News -->
+                      <!-- Widget Gallery -->
+                      <aside class="widget col-md-4 widget_gallery">
+                          <div class="footer-widget-title"> <h2>Flicker Photos</h2> </div>
+                          <ul>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-2.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-3.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-4.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-5.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-6.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-7.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-8.jpg' %}" alt=""></a></li>
+                          </ul>
+                      </aside>
+                      <!-- Widget Gallery -->
+                  </div>
+                  <a href="#" class="ritekhed-back-top"><i class="fa fa-angle-up"></i></a>
+              </div>
+          </div>
+          <!-- Footer Widget -->
+
+          <!-- CopyRight -->
+          <div class="ritekhed-copyright">
+              <div class="container">
+                  <div class="row">
+                      <aside class="col-md-6"><p>© 2018, All Right Reserved - by <a href="index-2.html">RiteTags</a></p></aside>
+                      <aside class="col-md-6">
+                          <ul class="ritekhed-copyright-link">
+                              <li><a href="#">Terms And Condition</a></li>
+                              <li><a href="#">Privacy Policy</a></li>
+                          </ul>
+                      </aside>
+                  </div>
+              </div>
+          </div>
+          <!-- CopyRight -->
+
+      </footer>
+      <!-- Footer -->
+  </div>
+  </body>
+</html>
+
+<script src="{% static '/sportsfinal/js/essential-plugins.js' %}"></script>
+<script src="{% static '/sportsfinal/css//js/bootstrap.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/plugins/pace.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/main.js' %}"></script>
+<script src="{% static '/sportsfinal/js/jquery.js' %}"></script>
+<script src="{% static '/sportsfinal/js/popper.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/bootstrap.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/slick.slider.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/fancybox.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/isotope.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/smartmenus.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/progressbar.js' %}"></script>
+<script src="{% static '/sportsfinal/js/counter.js' %}"></script>
+<script src="{% static '/sportsfinal/js/jquery.countdown.min.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="{% static '/sportsfinal/js/functions.js' %}"></script>
+<script
+  type="text/javascript"
+  src="{% static '/sportsfinal/js/plugins/jquery.dataTables.min.js' %}"
+></script>
+<script
+  type="text/javascript"
+  src="{% static '/sportsfinal/js/plugins/dataTables.bootstrap.min.js' %}"
+></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("form").on("focus", ":input", function() {
+      $(this).attr("autocomplete", "off");
+    });
+  });
+
+  $("#spinner").hide();
+
+  $(".date")
+    .datepicker({ format: "dd-mm-yyyy", endDate: "+0d", autoclose: true })
+    .datepicker()
+    .on("changeDate", function(ev) {
+      $(this)
+        .next("span")
+        .remove();
+    });
+
+  $(".date-own")
+    .datepicker({
+      minViewMode: 2,
+      format: "yyyy",
+      endDate: "+0y"
+    })
+    .on("changeDate", function(ev) {
+      $(this)
+        .next("span")
+        .remove();
+    });
+  $(".date-ownm")
+    .datepicker({
+      minViewMode: 1,
+      format: "MM"
+    })
+    .on("changeDate", function(ev) {
+      $(this)
+        .next("span")
+        .remove();
+    });
+  //Shoumya
+  var date = new Date();
+  date.setDate(date.getDate());
+
+  $(".currentDate")
+    .datepicker({
+      startDate: date,
+      format: "dd-mm-yyyy"
+    })
+    .on("changeDate", function(ev) {
+      $(this)
+        .next("span")
+        .remove();
+    });
+  $("#sampleTable").DataTable();
+
+  $("#sampleTableScrolling").DataTable({
+    scrollX: true
+  });
+</script>

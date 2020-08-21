@@ -1,0 +1,808 @@
+{% load static %}
+<html dir="ltr" lang="en"><!--<![endif]--><head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+  />
+  
+  <style>
+    div.image {
+    background-image: url("{% static '/GroundBook/images/SportsG7.jpg' %}");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-color: transparent;
+    background-size: 100% 100%;
+} 
+</style>
+
+  <script async="" src="js/analystic.js"></script>
+  <script src="{% static '/GroundBook/js/jquery-2.1.1.min.js' %}" type="text/javascript"></script>
+
+  <link href="{% static '/GroundBook/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" type="text/css" href="{% static '/GroundBook/css/live_search.css' %}" />
+
+  <link href="{% static '/GroundBook/css/stylesheet.css' %}" rel="stylesheet" />
+  <link href="{% static '/GroundBook/css/font-awesome-animation.min.css' %}" rel="stylesheet" />
+  <link href="{% static '/GroundBook/css/main.css' %}" rel="stylesheet" />
+
+  <script src="{% static '/GroundBook/js/easing.js' %}" type="text/javascript"></script>
+  <script type="text/javascript" src="{% static '/GroundBook/js/jquery.ui.totop.min.js' %}"></script>
+  <script src="{% static '/GroundBook/js/common.js' %}" type="text/javascript"></script>
+  <script type="text/javascript" src="{% static '/GroundBook/js/jquery.js' %}"></script>
+
+  <link rel="stylesheet" href="{% static '/GroundBook/scss/owl.carousel.scss' %}" type="text/css" media="screen"/>
+  <script src="{% static '/GroundBook/js/owl.carousel.js' %}"></script>
+
+  <link rel="stylesheet" type="text/css" href="{% static '/GroundBook/css/font.css' %}" />
+  <script type="text/javascript" src="{% static '/GroundBook/js/inr.js' %}"></script>
+    
+    </head>
+    
+    
+    <body class="product-category-20">
+    
+        
+  
+    <div class="image container_bg">
+    <script type="text/javascript" src="{% static '/GroundBook/js/jquery.js' %}"></script>
+    
+    <div class="image container">
+      <ul class="breadcrumb">
+            <li><a href="https://www.sporloc.com/ahmedabad">Home</a></li>
+            <li><a href="">Ahmedabad</a></li>
+            <li><a href="">All Sports</a></li>
+          </ul>
+      <link rel="stylesheet" type="text/css" href="{% static '/GroundBook/css/live_search.css' %}">
+    
+    
+      <div class="image row"><aside id="column-right" class="col-sm-3 hidden-xs">
+        
+     <div class="image panel panel-default">
+      <div class="image panel-heading filter1"><i class="fa fa-filter" aria-hidden="true"></i> Filters	<a data-target="#demo_filter" data-toggle="collapse" class="fa fa-caret-down collapsed" aria-expanded="true">
+        </a>
+        <a class="pull-right filter-reset-all">Reset All</a>
+      </div>
+      
+      <div class="image list-group collapse in" id="demo_filter" style="height: auto;">
+            <div class="image list-group-item">
+        <a class="list-group-item">Ground Type</a>
+          <div id="image filter-group1">
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="GroundType:Court"> Court                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="GroundType:Soapy"> Soapy                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="GroundType:Public"> Public                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="GroundType:Grass"> Grass                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="GroundType:Turf"> Turf                 
+                </label>
+            </div>
+                          </div>
+        </div>
+        
+        <div class="image list-group-item">
+        <a class="list-group-item">Select Area</a>
+          <div id="image filter-group1">
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="SelectArea:136"> Bodakdev                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="SelectArea:57"> Navrangpura                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="SelectArea:58"> Thaltej                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="SelectArea:55"> Vastrapur                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="SelectArea:56"> Vejalpur                  
+                </label>
+            </div>
+                          </div>
+        </div>
+        
+        <div class="image list-group-item">
+        <a class="list-group-item">Cost</a>
+          <div id="image filter-group1">
+                    <div class="checkbox">
+                <label>
+                    <input type="checkbox" class="myCheckbox" name="filter[]" value="Cost:< 1000"> &lt; 1000                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" class="myCheckbox" name="filter[]" value="Cost:1000-2000 "> 1000-2000                  
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" class="myCheckbox" name="filter[]" value="Cost:2000-3000"> 2000-3000                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" class="myCheckbox" name="filter[]" value="Cost:3000-4000 "> 3000-4000                  
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" class="myCheckbox" name="filter[]" value="Cost:4000 <"> 4000 &lt;                 
+                </label>
+            </div>
+                          </div>
+        </div>
+        
+        <div class="image list-group-item">
+        <a class="list-group-item">Size</a>
+          <div id="image filter-group1">
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="Size:5 * 5"> 5 * 5                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="Size:6 * 6"> 6 * 6                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="Size:7 * 7"> 7 * 7                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="Size:8 * 8"> 8 * 8                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="Size:10 * 10"> 10 * 10                 
+                </label>
+            </div>
+                    <div class="image checkbox">
+                <label>
+                    <input type="checkbox" name="filter[]" value="Size:11 * 11"> 11 * 11                 
+                </label>
+            </div>
+                          </div>
+        </div>
+      
+        <!--    <div class="list-group-item">
+        <a class="list-group-item">Ground Type</a>
+          <div id="filter-group1">
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="1" />
+                Turf                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="2" />
+                Grass                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="3" />
+                Public                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="4" />
+                Soapy                      </label>
+            </div>
+                  </div>
+        </div>
+            <div class="list-group-item">
+        <a class="list-group-item">Select Area</a>
+          <div id="filter-group2">
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="5" />
+                Airoli                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="6" />
+                Andheri                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="7" />
+                Babulnath                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="8" />
+                Bhayander                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="9" />
+                Borivali                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="10" />
+                Chembur                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="11" />
+                Churchgate                      </label>
+            </div>
+                  </div>
+        </div>
+            <div class="list-group-item">
+        <a class="list-group-item">Cost</a>
+          <div id="filter-group3">
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="15" />
+                &lt; 1000                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="14" />
+                1000-2000                       </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="13" />
+                2000-3000                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="12" />
+                3000-4000                       </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="27" />
+                4000 &lt;                      </label>
+            </div>
+                  </div>
+        </div>
+            <div class="list-group-item">
+        <a class="list-group-item">Size</a>
+          <div id="filter-group5">
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="20" />
+                5 * 5                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="21" />
+                6 * 6                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="22" />
+                7 * 7                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="23" />
+                8 * 8                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="24" />
+                10 * 10                      </label>
+            </div>
+                    <div class="checkbox">
+              <label>
+                            <input type="checkbox" name="filter[]" value="25" />
+                11 * 11                      </label>
+            </div>
+                  </div>
+        </div>
+        -->
+        
+        
+      <!--<div class="panel-footer text-right" style="height:0px;;width:100%;">
+        <button type="button" id="button-filter" class="btn btn-primary" style="opacity:0; height:0px;;width:0px;">Refine Search</button>
+      </div>-->
+      </div>
+    </div>
+    <script type="text/javascript">
+    filter_data();
+    // $('.myCheckbox').click(function() {
+        // $(this).('input:checkbox').prop('checked', false);
+    // });
+    
+    $(".myCheckbox").on('click', function() {
+    
+       var $box = $(this);
+       if ($box.is(":checked")) 
+       {
+    
+       // set all elements matching the name to unchecked        
+       $(".myCheckbox").prop("checked", false);
+    
+       // set the orginally checked box back to 'checked'       
+       $box.prop("checked", true);
+      } 
+      else 
+      {
+         $box.prop("checked", false);
+      }
+    });
+    
+    $('.filter-reset-all').click(function(){
+        $("input:checkbox[name='filter[]']").prop("checked", false);
+        filter_data();
+        //	$("#button-filter").click();
+    })
+    
+    $('input[name^=\'filter\']').click(function(){
+        filter_data();
+        //document.getElementById('button-filter').click();
+        //$("#button-filter").click();
+    });
+    
+    $('.filter-reset-all').click(function(){
+        filter_value = '';
+    })
+    
+    $('#button-filter').on('click', function() {
+        filter_data();
+        
+        //location = 'https://www.sporloc.com/sports-ground-on-rent/all-sports-ground/&filter=' + filter.join(',');
+    });
+    function filter_data(){
+        filter = [];
+    
+        $('input[name^=\'filter\']:checked').each(function(element) {
+            filter.push(this.value);
+        });
+        //console.log('filters are' + filter.join(','));
+        
+        var filter_value = filter.join(',');
+        
+        $.ajax({
+            url: 'https://www.sporloc.com/index.php?route=product/filter/ajax',
+            type: 'post',
+            data: {filter:filter_value},
+            datatype: 'json',
+            beforeSend: function() {
+               $("#venue_list").html("Loading data...");
+               console.log("Loading...")
+            },
+            complete: function() {
+               console.log("Complete...")
+            },
+            success: function(result){
+                //var products = result;
+                if(result != ''){
+            
+                $("#venue_list").html("");
+                    $.each(result, function(index,product) {
+                        var html = '';
+                        
+                        // html += '<div class="row" id="venue_list">';
+                        var url = window.location.href;
+                        var str = url;
+                        var res = str.split("/");
+                        var city = res[3];
+                        var link = product['href'];
+                        var product_name = link.split("/");
+                        var p = product_name[3];
+                        var product_href = "https://www.sporloc.com/"+city+"/sports-ground-booking/"+ p.toLowerCase()+"/";
+                        console.log(product_href);
+                        if(product['thumb']){
+                            var pos = product['thumb'].substr(20);
+                            var alt_tag_explode = pos.split(".");
+                            var alt_tag_roshan = alt_tag_explode[0];
+                        } else {
+                            var alt_tag_roshan = '';
+                        }
+                        html +=	'<div class=" image product-layout product-list col-xs-12">';
+                        html +=		'<div class="image product-thumb">';
+                        html +=		'<div class="image image"><a href="'+product_href+'">';
+                        html +=		'<img src="https://www.sporloc.com/'+product['thumb']+'" alt="'+product['name'] + ' ' + alt_tag_roshan +'" title="'+product['name']+' photo" class="img-responsive" /></a></div>';
+                        html +=		'<div class="image venue-list-details-21-oct">';
+                        html +=		'<div class="image caption">';
+                        html +=		'<h4><a href="'+product_href+'">'+product['name']+'</a></h4>';
+                        html +=		'<p><i class="fa fa-map-marker" aria-hidden="true"></i>'+product['area']+','+product['sku']+'</p>';
+                         if(product['rating'] != null){
+                        html +=		'<div class="image review-sp">';
+                        html +=		'<div class="image avg-rating">';
+                        html +=		'<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>'+parseFloat(parseFloat(product['rating']).toPrecision(1));
+                        html +=		'</div>';
+                        html +=		'<div class="image total-reviews">';
+                        if(product['rating'] > 0){
+                            html +=		product['reviews'];
+                        } else {
+                            html +=		'No';
+                        }	
+                        if(product['reviews'] > 1 ){
+                            html += 	' Reviews';
+                            }else{
+                            html += 	' Review';
+                            }
+                        
+                        html +=		'</div></div>';
+                         }else{
+                         html +=		'<div class="image review-sp">';
+                         html +=		'<div class="image avg-rating">';
+                         html +=		'<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 0';
+                         html +=		'</div>';
+                         html +=		'<div class="image total-reviews">';
+                         html += 	'No Review';
+                         html +=		'</div></div>';	
+                         }
+                        html +=     '</div>';
+                        html +=		'<div class="image button-group">';
+                        if(product['status'] == '1'){
+                        html +=		'<a href = "'+product_href+'"><button type="button" class="width_size_13_april_2017"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Book Now</span></button></a>';
+                        }
+                        else{
+                        html +=		'<a href = "'+product_href+'"><button type="button" class="width_size_13_april_2017"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Enquire Now</span></button></a>';
+                        }
+                        html +=		'</div></div></div></div>';
+                        
+                        // html +=		'</div>';
+                             
+                        
+                        
+                        $("#venue_list").append(html);
+                    });
+                        html  =     '<div class="image pagination_123">';
+                        html +=		'<div class="image col-sm-12 text-left">'+result[0].pagination+'</div>';
+                        //html +=	    '<div class="col-sm-6 text-right">'+result[0].noresults+'</div>';
+                        html +=		'</div>';
+                        $("#venue_list").append(html);
+                        adjustPagination();
+                    //$(".pagination").hide();
+                }
+                else{
+                    $("#venue_list").html("No Venues found.");
+                    $(".pagination").hide();
+                }
+            }
+        });
+    }
+    function adjustPagination(){
+        var a = $(".pagination").children();
+        var len = a.length;
+        if(len >= 2){
+            for(var i=0;i<len;i++){
+            if(a[i].children[0].tagName.toLowerCase() == 'a'){
+            a[i].children[0].href="#";
+            //a[i].children[0].className="paginate_me";
+            a[i].children[0].addEventListener("click", pagin_click, false);
+            }
+        }
+    }
+    }
+    function pagin_click(){
+        filter = [];
+    
+        $('input[name^=\'filter\']:checked').each(function(element) {
+            filter.push(this.value);
+        });
+        //console.log('filters are' + filter.join(','));
+        var pg = parseInt(this.innerHTML);
+        var pageno;
+        if(!isNaN(pg)){
+            pageno = pg;
+        } else if(this.innerHTML == '&gt;'){
+            var val = $(".pagination > li.active")[0].innerText;
+            pageno = parseInt(val) + 1;
+        } else if(this.innerHTML == '&lt;'){
+            var val = $(".pagination > li.active")[0].innerText;
+            pageno = parseInt(val) - 1;
+        } else if(this.innerHTML == '&gt;|'){
+            pageno = $(".pagination > li").length-2;
+        } else {
+            pageno = 1;
+        }
+        var filter_value = filter.join(',');
+        
+        $.ajax({
+            url: 'https://www.sporloc.com/index.php?route=module/filter/ajax',
+            type: 'post',
+            data: {filter:filter_value,page:pageno},
+            datatype: 'json',
+            beforeSend: function() {
+               $("#venue_list").html("Loading data...");
+               console.log("Loading...")
+            },
+            complete: function() {
+               console.log("Complete...")
+            },
+            success: function(result){
+                //var products = result;
+                if(result != ''){
+            
+                $("#venue_list").html("");
+                    $.each(result, function(index,product) {
+                        var html = '';
+                        
+                        // html += '<div class="row" id="venue_list">';
+                        var url = window.location.href;
+                        var str = url;
+                        var res = str.split("/");
+                        var city = res[3];
+                        var link = product['href'];
+                        var product_name = link.split("/");
+                        var p = product_name[3];
+                        var product_href = "https://www.sporloc.com/"+city+"/sports-ground-booking/"+ p.toLowerCase()+"/";
+                        console.log(product_href);
+                        var pos = product['thumb'].substr(20);
+                        var alt_tag_explode = pos.split(".");
+                        var alt_tag_roshan = alt_tag_explode[0];
+                        html +=	'<div class="image product-layout product-list col-xs-12">';
+                        html +=		'<div class="image product-thumb">';
+                        html +=		'<div class="image image"><a href="'+product_href+'">';
+                        html +=		'<img src="https://www.sporloc.com/'+product['thumb']+'" alt="'+product['name'] + ' ' + alt_tag_roshan +'" title="'+product['name']+' photo" class="img-responsive" /></a></div>';
+                        html +=		'<div class="image venue-list-details-21-oct">';
+                        html +=		'<div class="image caption">';
+                        html +=		'<h4><a href="'+product_href+'">'+product['name']+'</a></h4>';
+                        html +=		'<p><i class="fa fa-map-marker" aria-hidden="true"></i>'+product['area']+','+product['sku']+'</p>';
+                         if(product['rating'] != null){
+                        html +=		'<div class="image review-sp">';
+                        html +=		'<div class="image avg-rating">';
+                        html +=		'<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>'+parseFloat(parseFloat(product['rating']).toPrecision(1));
+                        html +=		'</div>';
+                        html +=		'<div class="image total-reviews">';
+                        if(product['rating'] > 0){
+                            html +=		product['reviews'];
+                        } else {
+                            html +=		'No';
+                        }	
+                        if(product['reviews'] > 1 ){
+                            html += 	' Reviews';
+                            }else{
+                            html += 	' Review';
+                            }
+                        
+                        html +=		'</div></div>';
+                         }else{
+                         html +=		'<div class="image review-sp">';
+                         html +=		'<div class="image avg-rating">';
+                         html +=		'<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 0';
+                         html +=		'</div>';
+                         html +=		'<div class="image total-reviews">';
+                         html += 	'No Review';
+                         html +=		'</div></div>';	
+                         }
+                        html +=     '</div>';
+                        html +=		'<div class="image button-group">';
+                        if(product['status'] == 1){
+                        html +=		'<a href = "'+product_href+'"><button type="button" class="width_size_13_april_2017"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Book Now</span></button></a>';
+                        }
+                        else{
+                        html +=		'<a href = "'+product_href+'"><button type="button" class="width_size_13_april_2017"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Enquire Now</span></button></a>';
+                        }
+                        html +=		'</div></div></div></div>';
+                        
+                        // html +=		'</div>';
+                             
+                        
+                        
+                        $("#venue_list").append(html);
+                    });
+                        html  =     '<div class="image pagination_123">';
+                        html +=		'<div class="image col-sm-12 text-left">'+result[0].pagination+'</div>';
+                        //html +=	    '<div class="col-sm-6 text-right">'+result[0].noresults+'</div>';
+                        html +=		'</div>';
+                        $("#venue_list").append(html);
+                        adjustPagination();
+                    //$(".pagination").hide();
+                }
+                else{
+                    $("#venue_list").html("No Venues found.");
+                    $(".pagination").hide();
+                }
+            }
+        });
+    }
+    $(".paginate_me").click(function() {
+        alert('here');
+    });
+    $( document ).ready(function() {
+        var width = $( window ).width();
+        if(width < 768){
+            $('#demo_filter').removeClass('in');
+        }
+    });
+    </script>
+      </aside>
+    <!--<aside id="column-left" class="col-sm-3 hidden-xs">
+     
+    <div class="filter1">
+    <a href="#"><i class="fa fa-filter" aria-hidden="true"></i> Filters</a>
+    <a href="#" class="filter-reset-all">Reset All</a>
+    </div>
+    <div class="left-sidebar">
+    <h2>Ground Type</h2>
+    
+    <div class="panel-body">
+    <form>
+    <input type="radio" name="gender" value="male" checked=""> Turf<br>
+    <input type="radio" name="gender" value="female"> Grass<br>
+    <input type="radio" name="gender" value="other"> Public<br>
+    <input type="radio" name="gender" value="other"> Soapy
+    </form>
+    </div>
+    
+    
+    <h2>Popular Area</h2>
+    
+    <div class="panel-body">
+    <form>
+    <input type="radio" name="gender" value="male" checked=""> Airoli<br>
+    <input type="radio" name="gender" value="female"> Andheri<br>
+    <input type="radio" name="gender" value="other"> Babulnath<br>
+    <input type="radio" name="gender" value="male" checked=""> Bhayandar<br>
+    <input type="radio" name="gender" value="female"> Borivali<br>
+    <input type="radio" name="gender" value="male" checked=""> Chembur<br>
+    <input type="radio" name="gender" value="female"> Churchgate<br>
+    
+    </form>
+    </div>
+    
+    <h2>Cost</h2>
+    
+    <div class="panel-body">
+    <form>
+    <input type="radio" name="gender" value="male" checked=""> 500 - 1000<br>
+    <input type="radio" name="gender" value="female"> 1000 - 2000<br>
+    <input type="radio" name="gender" value="other"> 2000 - 3000<br>
+    <input type="radio" name="gender" value="other"> 3000 - 4000<br>
+    <input type="radio" name="gender" value="other"> 000 - 5000
+    </form>
+    </div>
+    
+    
+    <h2>Time</h2>
+    
+    <div class="panel-body">
+    <form>
+    <input type="radio" name="gender" value="male" checked=""> Morning<br>
+    <input type="radio" name="gender" value="female"> Afternoon<br>
+    <input type="radio" name="gender" value="other"> Evening<br>
+    <input type="radio" name="gender" value="other"> Late Night
+    </form>
+    </div>
+    
+    <h2>Size</h2>
+    
+    <div class="panel-body">
+    <form>
+    <input type="radio" name="gender" value="male" checked=""> 5 v 5<br>
+    <input type="radio" name="gender" value="female"> 6 v 6<br>
+    <input type="radio" name="gender" value="other"> 7 v 7<br>
+    <input type="radio" name="gender" value="other"> 8 v 8<br>
+    <input type="radio" name="gender" value="other"> 9 v 9<br>
+    <input type="radio" name="gender" value="other"> 10 v 10
+    </form>
+    </div>
+    
+    </div>
+    
+    </aside>-->
+                    <div id="image content" class="col-sm-9">		<div class="image search-box-inner-page-14-nov">
+            <div class="image search-ground">
+            <h4>Search for Ground <h4>
+            <div id="image tfheader">			            
+            <div id="image search" class="input-group ">
+              <input autocomplete="off" name="search" value="" placeholder="Search" class="form-control input-lg" type="text" id="id_search_box"><ul class="dropdown-menu"></ul><ul style="display: none;" class="dropdown-menu"></ul><ul style="display: none;" class="dropdown-menu"></ul>
+              <!--<span class="input-group-btn" id="mysearch_btn">
+                <button type="button" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button>
+              </span>-->
+              <span class="input-group-btn">
+                <a id="mysearch_btn" href="javascript:void(0);" class="btn btn-default btn-lg" style="color:white;">search</a>
+              </span>
+            </div><div id="image live-search" style="overflow:auto;">	<ul>	</ul><div class="image result-text"></div></div>
+            <div style="image display: none;" id="live-search">	
+            <ul>	</ul>
+            <div class="image result-text"></div>
+            </div>
+            <div id="image live-search">	
+            <ul>	</ul>
+            <div class="image result-text"></div>
+            </div>
+            </div>
+            </div>
+            </div>  
+          <h2>All Sports</h2>
+          <!--div class="row">
+                            <!--<div class="col-sm-2"><img src="image/cache/catalog/all-sports-80x80.png" alt="All Sports" title="All Sports" class="img-thumbnail" /></div>
+                    <br>
+                    <div class="col-sm-10"><p>
+        See all sports grounds of your city</p>
+    </div>
+                          </div>-->
+        
+        
+    
+    
+    
+          
+          <hr>
+          
+          <!--
+          -->
+                 <!--<p><a href="" id="compare-total"></a></p>
+            <div class="row">
+            <div class="col-md-4">
+              <div class="btn-group hidden-xs">
+                <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title=""><i class="fa fa-th-list"></i></button>
+                <button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title=""><i class="fa fa-th"></i></button>
+              </div>
+            </div>
+            <div class="col-md-2 text-right">
+              <label class="control-label" for="input-sort">Sort By:</label>
+            </div>
+            <div class="col-md-3 text-right">
+              <select id="input-sort" class="form-control" onchange="location = this.value;">
+                                        <option value="" selected="selected"></option>
+                            <option value=""></option>
+                                      </select>
+            </div>
+            <div class="col-md-1 text-right">
+              <label class="control-label" for="input-limit">Show:</label>
+            </div>
+            <div class="col-md-2 text-right">
+              <select id="input-limit" class="form-control" onchange="location = this.value;">
+                                        <option value="" selected="selected"></option>
+                            <option value=""></option>
+                                      </select>
+            </div>
+          </div>-->
+         
+          <div class="image product-listing-9-jan-2017" id="venue_listing">
+            <div class="image row" id="venue_list"><div class="image product-layout product-list col-xs-12"><div class="image product-thumb"><div class="image"><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/kasa/"></a><img src="{% static '/GroundBook/images/sportsG2.jpg' %}" alt="K.A.S.A. 850131KASA-286x180" title="K.A.S.A. photo" class="img-responsive"></a></div><div class="image venue-list-details-21-oct"><div class="image caption"><h4><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/kasa/">PLANET GROUND 1</a></h4><p><i class="fa fa-map-marker" aria-hidden="true"></i>Vastrapur,Ahmedabad</p><div class="button-group"><a href="{% url 'GroundBook2' %}"><button type="button" class="width_size_13_april_2017"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Enquire Now</span></button></a></div></div></div></div><div class="product-layout product-list col-xs-12"><div class="image product-thumb"><div class="image image"><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/kahaani-bakeri/">
+            <img src="{% static '/GroundBook/images/st3.jpg' %}" alt="Kahaani @ Bakeri 868169KASA-286x180" title="Kahaani @ Bakeri photo" class="img-responsive"></a></div><div class="image venue-list-details-21-oct"><div class="image caption"><h4><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/kahaani-bakeri/">PLANET GROUND 2</a></h4><p><i class="fa fa-map-marker" aria-hidden="true"></i>Vejalpur ,Ahmedabad</p><div class="button-group"><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/kahaani-bakeri/"><button type="button" class="width_size_13_april_2017"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Enquire Now</span></button></a></div></div></div></div><div class="product-layout product-list col-xs-12"><div class="image product-thumb"><div class="image image"><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/juggernaut-arena-thaltej/">
+            <img src="{% static '/GroundBook/images/st6.jpg' %}" alt="Juggernaut Arena - Thaltej 381822Juggernaut-286x180" title="Juggernaut Arena - Thaltej photo" class="img-responsive"></a></div><div class="image venue-list-details-21-oct"><div class="image caption"><h4><a href="{% url 'Grounds2' %}">PLANET GROUND 3</a></h4><p><i aria-hidden="true"></i>Thaltej,Ahmedabad</p><div class="image button-group"><a href="{% url 'Grounds2' %}"><button type="button" class="width_size_13_april_2017"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Enquire Now</span></button></a></div></div></div></div><div class="product-layout product-list col-xs-12"><div class="image product-thumb"><div class="image image"><a href="{% url 'Grounds2' %}">
+            <img src="{% static '/GroundBook/images/st5.jpg' %}" alt="Juggernaut Arena - Navarngpura 674025Logoandtypeface_background-286x180" title="Juggernaut Arena - Navarngpura photo" class="img-responsive"></a></div><div class="venue-list-details-21-oct"><div class="image caption"><h4><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/juggernaut-arena-navarngpura/">PLANET GROUND 4</a></h4><p><i class="fa fa-map-marker" aria-hidden="true"></i>Navrangpura,Ahmedabad</p><div class="image button-group"><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/juggernaut-arena-navarngpura/"><button type="button" class="width_size_13_april_2017"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Enquire Now</span></button></a></div></div></div></div><div class="image product-layout product-list col-xs-12"><div class="image product-thumb"><div class="image image"><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/turf-sports-ahmedabad/">
+            <img src="{% static '/GroundBook/images/st6.jpg' %}" alt="Turf Sports - Ahmedabad 46155710296564_858341017593856_179592836336928844_n-286x180" title="Turf Sports - Ahmedabad photo" class="img-responsive"></a></div><div class="image venue-list-details-21-oct"><div class="image caption"><h4><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/turf-sports-ahmedabad/">PLANET GROUND 5</a></h4><p><i class="fa fa-map-marker" aria-hidden="true"></i>Bodakdev,Ahmedabad</p><div class="image button-group"><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/turf-sports-ahmedabad/"><button type="button" class="width_size_13_april_2017"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Enquire Now</span></button></a></div></div></div></div><div class="product-layout product-list col-xs-12"><div class="image product-thumb"><div class="image image"><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/the-huddle-sports-arena-thaltej/">
+            <img src="{% static '/GroundBook/images/st3.jpg' %}" alt="The Huddle Sports Arena - Thaltej 25994541092102_728629280811516_3073438220030050304_n-286x180" title="The Huddle Sports Arena - Thaltej photo" class="img-responsive"></a></div><div class="image venue-list-details-21-oct"><div class="image caption"><h4><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/the-huddle-sports-arena-thaltej/">PLANET GROUND 5</a></h4><p><i class="fa fa-map-marker" aria-hidden="true"></i>Thaltej,Ahmedabad</p><div class="image button-group"><a href="https://www.sporloc.com/ahmedabad/sports-ground-booking/the-huddle-sports-arena-thaltej/"><button type="button" class="width_size_13_april_2017"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Enquire Now</span></button></a></div></div></div></div><div class="pagination_123"><div class="image col-sm-12 text-left"></div></div></div>
+          </div>
+          <!-- <div class="row" class="pagination">
+            <div class="col-sm-6 text-left pagination" ></div>
+            <div class="col-sm-6 text-right pagination">Showing 1 to 6 of 6 (1 Pages)</div>
+          </div> -->
+                      </div>
+        </div>
+    </div>
+    
+    
+    
+    </div>
+</div>
+        
+    <a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a></body></html>

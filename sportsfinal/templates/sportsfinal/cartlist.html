@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Price</td>
+                <td>QTY</td>
+                <td>Total</td>
+            </tr>
+        </thead>
+    <tbody>
+    {% for item in clist %}
+
+<tr>
+    <td>{{item.FkPID.pname}}</td>
+    <td>{{item.FkPID.pprice}}</td>
+    <td>{{item.qty}}</td>
+    <td>{{item.total}}</td>
+</tr>
+
+
+    {% endfor %}
+   </tbody>
+   </table>
+   <input type="submit" value="place order"/>
+</body>
+</html>

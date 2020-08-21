@@ -1,0 +1,499 @@
+{% load static %}
+<!doctype html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+      Template
+    </title>
+
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fontawesome-all.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/slick-slider.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fancybox.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/smartmenus.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/color.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/responsive.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="keywords"
+      content="Sports Club Membership Registration form a Flat Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements"
+    />
+    <script type="application/x-javascript">
+       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <link
+      href="{% static '/sportsfinal/css/bookingcss/style.css' %}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- <link
+      href="{% static '/sportsfinal/css/bookingcss/style.css' %}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    /> -->
+    <link
+      href="{% static '/sportsfinal/css/bookingcss./Sports Club Membership Registration form a Flat Responsive Widget Template __ w3layouts_files/css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static '/sportsfinal/css/bookingcss./Sports Club Membership Registration form a Flat Responsive Widget Template __ w3layouts_files/css(1)' %}'"
+      rel="stylesheet"
+    />
+    <style>
+      .custm-btn-style{
+      float: left;
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 5px 10px;
+      line-height: 1;
+      text-transform: uppercase;
+      border-radius: 5px;
+      cursor: pointer;
+      }
+      .custm-cricket-bg{
+      background:url(/static/sportsfinal/css/extra-images/black-claw-hammer-on-brown-wooden-plank-209235.jpg)no-repeat;
+      background-size: cover;
+      background-attachment:fixed;
+      }	
+      .ritekhed-login-box{
+      background-color: #28292b85;
+      }
+      .custm-table{
+        background-color: #28292b85;
+        
+      }
+        
+        </style>
+        
+  </head>
+  <body class="Home">
+
+        <!-- Main Header -->
+        <div class="ritekhed-main-header ritekhed-border-color">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <a href="index-2.html" class="ritekhed-logo"><h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>PLANET</b></span> <span class="w3-hide-small w3-text-light-grey">SPORTS</span></h1></a>
+                      
+                      <div class="ritekhed-right-head">
+                          <span class="ritekhed-menu-link">
+                              <span class="menu-bar"></span>
+                              <span class="menu-bar"></span>
+                              <span class="menu-bar"></span>
+                          </span>
+                          <nav id="main-nav">
+                              <ul id="main-menu" class="sm sm-blue">
+                                  <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                                  <li><a href="#">Features</a>
+                                      <ul>
+                                          <li><a href="{% url 'sportsClubMembership' %}">EventOrganizations</a></li>
+                                          <li><a href="{% url 'CricketForm' %}">Participate Event</a></li>
+                                          <li><a href="{% url 'RepairingZ' %}">RepairingZone</a></li> 
+                                          <li><a href="{% url 'fixture-list' %}">Fixture List</a></li>
+                                          <li><a href="{% url 'GroundHome1' %}">GroundBooking</a></li>
+                                          <li><a href="{% url 'gallery-simple' %}">Gallery Classic</a></li>
+                                          <li><a href="{% url 'blog-grid' %}">Gallery Classic</a></li>
+                                          <li><a href="{% url 'login-register' %}">Login Register</a></li>
+
+                                      </ul>
+                                  </li>
+                                  <li><a href="#">Players</a>
+                                      <ul>
+                                          <li><a href="#">Player Grid</a>
+                                              <ul>
+                                                  <li><a href="{% url 'player-grid' %}">Player Grid </a></li>
+                                                  <li><a href="{% url 'shop-grid' %}">Product Grid</a></li>
+                                              </ul>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="#">Our News</a>
+                                      <ul>
+                                          <li><a href="#">Blog Grid</a>
+                                              <ul>
+                                                  <li><a href="{% url 'blog-grid' %}">Blog-Grid</a></li>
+                                              </ul>
+                                          </li>
+                                          <li><a href="#">Blog Large</a>
+                                              <ul>
+                                                  <li><a href="blog-large-wos.html">Blog Large W/O/S</a></li>
+                                                  <li><a href="blog-large-wls.html">Blog Large W/L/S</a></li>
+                                                  <li><a href="blog-large.html">Blog Large W/R/S</a></li>
+                                              </ul>
+                                          </li>
+                                          <li><a href="#">Blog Detail</a>
+                                              <ul>
+                                                  <li><a href="blog-detail.html">Blog Detail W/Thumb</a></li>
+                                                  <li><a href="blog-detail-wsound.html">Blog W/SounCloud</a></li>
+                                                  <li><a href="blog-detail-wvid.html">Blog Detail W/Video</a></li>
+                                              </ul>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="#">Our Shop</a>
+                                      <ul>
+                                          <li><a href="{% url 'checkoutPlayer' %}">Player-Cart</a></li>
+                                          <li><a href="{% url 'checkout' %}">Product-Cart</a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="contact-us.html">Contact Us</a></li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Main Header -->
+
+      </div>
+      <!-- Header -->
+
+    <script src="{% static '/sportsfinal/js/bookingjs./Sports Club Membership Registration form a Flat Responsive Widget Template __ w3layouts_files/jquery.min.js.download' %}"></script>
+    <script
+      src="{% static '/sportsfinal/js/bookingjs./Sports Club Membership Registration form a Flat Responsive Widget Template __ w3layouts_files/monetization.js.download' %}0"
+      type="text/javascript"
+    ></script>
+    <script>
+      (function() {
+        if (typeof _bsa !== "undefined" && _bsa) {
+          // format, zoneKey, segment:value, options
+          _bsa.init("flexbar", "CKYI627U", "placement:w3layoutscom");
+        }
+      })();
+    </script>
+    <script>
+      (function() {
+        if (typeof _bsa !== "undefined" && _bsa) {
+          // format, zoneKey, segment:value, options
+          _bsa.init("fancybar", "CKYDL2JN", "placement:demo");
+        }
+      })();
+    </script>
+    <script>
+      (function() {
+        if (typeof _bsa !== "undefined" && _bsa) {
+          // format, zoneKey, segment:value, options
+          _bsa.init("stickybox", "CKYI653J", "placement:w3layoutscom");
+        }
+      })();
+    </script>
+    <script>
+    (function(v,d,o,ai)
+    {
+      ai=d.createElement("script");
+      ai.defer=true;
+      ai.async=true;
+      ai.src=v.location.protocol+o;d.head.appendChild(ai);
+      })
+      (window, document, "//a.vdo.ai/core/w3layouts_V2/vdo.ai.js?vdo=34");
+      </script>
+    <div id="codefund"><!-- fallback content --></div>
+    <script
+      src="{% static '/sportsfinal/js/bookingjs./Sports Club Membership Registration form a Flat Responsive Widget Template __ w3layouts_files/funder.js.download' %}"
+      async="async"
+    ></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async=""
+      src="{% static '/sportsfinal/js/bookingjs./Sports Club Membership Registration form a Flat Responsive Widget Template __ w3layouts_files/js' %}"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-149859901-1");
+    </script>
+
+    <script>
+      window.ga =
+        window.ga ||
+        function() {
+          (ga.q = ga.q || []).push(arguments);
+        };
+      ga.l = +new Date();
+      ga("create", "UA-149859901-1", "demo.w3layouts.com");
+      ga("require", "eventTracker");
+      ga("require", "outboundLinkTracker");
+      ga("require", "urlChangeTracker");
+      ga("send", "pageview");
+    </script>
+    <script
+      async=""
+      src="{% static '/sportsfinal/js/bookingjs./Sports Club Membership Registration form a Flat Responsive Widget Template __ w3layouts_files/autotrack.js.download' %}"
+    ></script>
+
+    <meta name="robots" content="noindex" />
+    <link
+      rel="stylesheet"
+      href="{% static '/sportsfinal/js/bookingjs./Sports Club Membership Registration form a Flat Responsive Widget Template __ w3layouts_files/demobar_w3_4thDec2019.css' %}"
+    />
+<div class="container-fluid custm-cricket-bg">
+  <div class="container">
+    <h1 style="color: white;">Planet Sports</h1>
+    <!---728x90--->
+
+    <div class="w3ls-main ">
+      <h2 style="color: white;">Repairing zone</form></h2>
+      <p style="color: white;">Complete the form below.</p>
+      <div class="w3ls-form">
+        <form
+          action="{% url 'RepairingZ' %}"
+          method="POST"
+        >
+        {% csrf_token %}
+          <ul class="fields">
+            <div class="Refer_w3l">
+              <h3 style="color: white;">Your details</h3>
+              <li>
+                <label class="w3ls-opt"
+                  >Name :<span class="w3ls-star"> * </span></label
+                >
+                <div class="w3ls-name">
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="first name"
+                    required=" "
+                  />
+                </div>
+              </li>
+
+              <li>
+                <div class="mail">
+                  <label class="w3ls-opt"
+                    >e-mail :<span class="w3ls-star"> * </span></label
+                  >
+                  <span class="w3ls-text w3ls-name">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="enter your e-mail"
+                      required=""
+                    />
+                  </span>
+                </div>
+              </li>
+              <li>
+                <label class="w3ls-opt"
+                  >phone number :<span class="w3ls-star"> * </span></label
+                >
+                <span class="w3ls-text w3ls-name">
+                  <input
+                    type="text"
+                    name="phone number"
+                    placeholder="phone number"
+                    required=""
+                  />
+                </span>
+              </li>
+              <li>
+                <label class="w3ls-opt"
+                  >Address: <span class="w3ls-star"> * </span>
+                </label>
+                <div class="adderss">
+                  <span class="text">
+                    <input
+                      type="text"
+                      name="address"
+                      placeholder="street address"
+                      required=" "
+                    />
+                  </span>
+                  <span class="text">
+                    <input
+                      type="text"
+                      name="city"
+                      placeholder="city"
+                      required=" "
+                    />
+                  </span>
+                  <span class="text">
+                    <input
+                      type="text"
+                      name="state"
+                      placeholder="state"
+                      required=""
+                    />
+                  </span>
+                  <span class="text">
+                    <input
+                      type="file"
+                      name="imgr"
+                      placeholder="Add-img"
+                      required=""
+                    />
+                  </span>
+                
+                
+                </div>
+              </li>
+              <li>
+                <label class="w3ls-opt"
+                  >Choose Repairing :<span class="w3ls-star"> * </span></label
+                >
+                <div class="w3ls-text w3ls-name">
+                  <span class="agile_sub-label">
+                    <select name="day" class="day">
+                      <option value="">select</option>
+                      <option value="1">Racket-Strining</option>
+                      <option value="2">Bat-Repairing</option>
+                      <option value="3">Other-item</option>
+                      </select>
+                  </span>
+                </div>
+                </li>
+                <div class="clear"></div>
+              </div>
+    
+                   <div>
+                  <label class="w3ls-opt"
+                  >Add Description :<span class="w3ls-star"> * </span></label>
+                  <span class="text">
+                    <textarea rows="5" cols="21"
+                      name="Productdescription"
+                      placeholder="Add-Repairing-Detail"
+                      required="">
+                    </textarea>
+                  </span>
+                </div>
+                </ul>
+                </form>
+              
+            
+            </div>
+        <li>
+        <div class="w3ls-btn agile_sub-label">
+          <input type="submit" value="payment"/>
+        </div>
+        </li>
+        
+  
+    </div>
+  </div>
+</div>
+
+               <!-- Footer -->
+        <footer id="ritekhed-footer" class="ritekhed-footer-one">
+          <!-- Footer Widget -->
+          <div class="ritekhed-footer-widget">
+              <div class="container">
+                  <div class="row">
+                      <!-- Widget Footer About -->
+                      <aside class="widget col-md-4 widget_footer_about">
+                          <a href="index-2.html" class="footer-logo"><h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>PLANET</b></span> <span class="w3-hide-small w3-text-light-grey">SPORTS</span></h1></a>
+                          <p>This product will help consumer to effectively progress in his interest of sport in multiple ways. The main objective of this project is to provide a platform where vendor can sell their product and user can buy the product. The ground booking and event organization task become less time consuming and less strenuous activity. The participants can participate in the event and hire the guest players. Keep user updated with latest news.</p>
+                          <!-- <ul class="ritekhed-social-network">
+                              <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook"></a></li>
+                              <li><a href="https://twitter.com/login" class="ritekhed-colorhover fab fa-twitter-square"></a></li>
+                              <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+                              <li><a href="https://plus.google.com/" class="ritekhed-colorhover fab fa-google-plus-square"></a></li>
+                          </ul> -->
+                          <ul class="ritekhed-info-list">
+                              <li><i class="fa fa-map-marker-alt"></i> <span>D-Tech Sports Num, Naroda, Ahmedabad</span></li>
+                              <li><i class="fa fa-phone"></i> <span>(+91) 8547632100</span></li>
+                              <li><i class="far fa-envelope"></i> <span><a href="mailto:name@email.com">PlanetSports17@gmail.com</a></span></li>
+                          </ul>
+                      </aside>
+                      <!-- Widget Footer About -->
+                      <!-- Widget Featured News -->
+                      <aside class="widget col-md-4 widget_featured_news">
+                          <div class="footer-widget-title"> <h2>Featured News</h2> </div>
+                          <ul>
+                              <li>
+                                  <span>01</span>
+                                  <h6><a href="#">Brendan Rodgers to raid his former club as he prepares to make a second bid for Celtic's Callum McGregor</a></h6>
+                                  <time datetime="2008-02-14 20:00">23/02/2020</time>
+                              </li>
+                              <li>
+                                  <span>02</span>
+                                  <h6><a href="#">Brendan Rodgers to raid his former club as he prepares to make a second bid for Celtic's Callum McGregor</a></h6>
+                                  <time datetime="2008-02-14 20:00">23/02/2020</time>
+                              </li>
+                              <li>
+                                  <span>03</span>
+                                  <h6><a href="#">Leicester are worried about losing James Maddison to Manchester United in the next transfer window, and are looking for backup.</a></h6>
+                                  <time datetime="2008-02-14 20:00">23/02/2020</time>
+                              </li>
+                          </ul>
+                      </aside>
+                      <!-- Widget Featured News -->
+                      <!-- Widget Gallery -->
+                      <aside class="widget col-md-4 widget_gallery">
+                          <div class="footer-widget-title"> <h2>Flicker Photos</h2> </div>
+                          <ul>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-2.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-3.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-4.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-5.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-6.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-7.jpg' %}" alt=""></a></li>
+                              <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-8.jpg' %}" alt=""></a></li>
+                          </ul>
+                      </aside>
+                      <!-- Widget Gallery -->
+                  </div>
+                  <a href="#" class="ritekhed-back-top"><i class="fa fa-angle-up"></i></a>
+              </div>
+          </div>
+          <!-- Footer Widget -->
+
+          <!-- CopyRight -->
+          <div class="ritekhed-copyright">
+              <div class="container">
+                  <div class="row">
+                      <aside class="col-md-6"><p>© 2020, All Right Reserved - by <a href="index-2.html">Planet Sports</a></p></aside>
+                      <aside class="col-md-6">
+                          <ul class="ritekhed-copyright-link">
+                              <li><a href="#">Terms And Condition</a></li>
+                              <li><a href="#">Privacy Policy</a></li>
+                          </ul>
+                      </aside>
+                  </div>
+              </div>
+          </div>
+          <!-- CopyRight -->
+
+            </footer>
+            <!-- Footer -->
+        </div>
+      </body>
+    
+    <!-- jQuery -->
+    
+    <script src="{% static '/sportsfinal/js/jquery.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/popper.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/slick.slider.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/fancybox.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/isotope.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/smartmenus.min.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/progressbar.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/counter.js' %}"></script>
+    <script src="{% static '/sportsfinal/js/jquery.countdown.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="{% static '/sportsfinal/js/functions.js' %}"></script>
+  
+</html>
+ 

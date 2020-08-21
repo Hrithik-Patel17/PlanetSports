@@ -1,0 +1,340 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static '/sportsfinal/css/style.css' %}">
+	<!-- CSS -->
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fontawesome-all.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/slick-slider.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/fancybox.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/smartmenus.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/color.css' %}">
+    <link rel="stylesheet" href="{% static '/sportsfinal/css/responsive.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Check-Account</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     
+     width: 100%;
+     background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)),url(/static/sportsfinal/css/extra-images/white-graphing-paper-164686.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+ 
+}
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}  
+
+.tag{
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.2rem;
+    color: white;
+    margin-top: 2.5rem;
+    line-height: 0.3;
+    animation: slideFromLeft 5s ease-in-out 1;
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-1000px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  75% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+.section{
+   
+   font-size: 2rem;
+   color: white;
+   margin-top: 2rem;
+   text-align: center;
+   padding-left: 0.2rem;
+   font-family: ;
+   padding-top:1rem;
+   padding-bottom: 2rem;
+   font-size:4rem;
+
+}
+.form-group{
+
+    padding-left: 43rem;
+
+}
+.text{
+    padding-left:0.2rem;
+}
+.btn{
+    display: inline-block;
+    background:pink;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    padding: 0.8rem 2rem;
+    color: white;
+    font-weight: bold;
+    outline: 0.2rem solid black;
+    outline-offset: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out ;   
+}
+.btn:hover{
+
+color:black;
+opacity: 0.7;
+}
+.btn:hover{
+
+animation: show 5s ease-in-out 1;
+}
+@keyframes show {
+0% {
+transform: scale(2);
+opacity: 0;
+}
+100% {
+transform: scale(1);
+opacity: 1;
+}
+}
+
+ </style>
+</head>
+<body>
+
+     <!-- Main Header -->
+     <div class="ritekhed-main-header ritekhed-border-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="index-2.html" class="ritekhed-logo"><h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>PLANET</b></span> <span class="w3-hide-small w3-text-light-grey">SPORTS</span></h1></a>
+                    
+                    <div class="ritekhed-right-head">
+                        <span class="ritekhed-menu-link">
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                        </span>
+                        <nav id="main-nav">
+                            <ul id="main-menu" class="sm sm-blue">
+                                <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="#">Features</a>
+                                    <ul>
+                                        <li><a href="{% url 'sportsClubMembership' %}">EventOrganizations</a></li>
+                                        <li><a href="{% url 'CricketForm' %}">Participate Event</a></li>
+                                        <li><a href="{% url 'RepairingZ' %}">RepairingZone</a></li> 
+                                        <li><a href="{% url 'fixture-list' %}">Fixture List</a></li>
+                                        <li><a href="{% url 'GroundHome1' %}">GroundBooking</a></li>
+                                        <li><a href="{% url 'gallery-simple' %}">Gallery Classic</a></li>
+                                        <li><a href="{% url 'blog-grid' %}">Gallery Classic</a></li>
+                                        <li><a href="{% url 'login-register' %}">Login Register</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#">Players</a>
+                                    <ul>
+                                        <li><a href="#">Player Grid</a>
+                                            <ul>
+                                                <li><a href="{% url 'player-grid' %}">Player Grid </a></li>
+                                                <li><a href="{% url 'shop-grid' %}">Product Grid</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Our News</a>
+                                    <ul>
+                                        <li><a href="#">Blog Grid</a>
+                                            <ul>
+                                                <li><a href="{% url 'blog-grid' %}">Blog-Grid</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Blog Large</a>
+                                            <ul>
+                                                <li><a href="blog-large-wos.html">Blog Large W/O/S</a></li>
+                                                <li><a href="blog-large-wls.html">Blog Large W/L/S</a></li>
+                                                <li><a href="blog-large.html">Blog Large W/R/S</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Blog Detail</a>
+                                            <ul>
+                                                <li><a href="blog-detail.html">Blog Detail W/Thumb</a></li>
+                                                <li><a href="blog-detail-wsound.html">Blog W/SounCloud</a></li>
+                                                <li><a href="blog-detail-wvid.html">Blog Detail W/Video</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Our Shop</a>
+                                    <ul>
+                                        <li><a href="{% url 'checkoutPlayer' %}">Player-Cart</a></li>
+                                        <li><a href="{% url 'checkout' %}">Product-Cart</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Header -->
+
+
+
+ <section class="section clearfix"> My Account </section>
+
+<div class="row">
+    <div class="col-sm-12 col-xs-12">
+        <div class="reset">
+            {% if msg %}
+            <script> alert('{{msg}}')</script>
+            {% endif %}
+            <form id="user-registration" action="{% url 'login-register' %}" method="post" class="form-validate">
+                {% csrf_token %}                    
+                <p style="font-size: 20px;color:white; text-align: center;">Please enter the verification code.</p>
+                                            <div class="form-group">
+                            <label style="font-size: 20px;color:white; text-align: center;">
+                                Enter the verification code: <span class="star" style="color: red; text-align: center;">&#160;*</span></label>
+                           <div class="text">
+                                <input type="text" style="font-size: 20px;color: black;" name="otp" maxlength="6" required aria-required="true" onblur="otpcheck();"/><span id="otp" style="color:red;"></span>                         </div>
+                           </div>
+                                    
+                <div class="form-group clearfix">
+                    <!-- <button type="submit" class="btn btn-primary validate">Submit</button> -->
+                    <input type="submit" value="Submit" style="font-size: 20px;" class="btn">
+
+                </div>         
+             </form>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer id="ritekhed-footer" class="ritekhed-footer-one">
+    <!-- Footer Widget -->
+    <div class="ritekhed-footer-widget">
+        <div class="container">
+            <div class="row">
+                <!-- Widget Footer About -->
+                <aside class="widget col-md-4 widget_footer_about">
+                    <a href="index-2.html" class="footer-logo"><h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>PLANET</b></span> <span class="w3-hide-small w3-text-light-grey">SPORTS</span></h1></a>
+                    <p>This product will help consumer to effectively progress in his interest of sport in multiple ways. The main objective of this project is to provide a platform where vendor can sell their product and user can buy the product. The ground booking and event organization task become less time consuming and less strenuous activity. The participants can participate in the event and hire the guest players. Keep user updated with latest news.</p>
+                    <!-- <ul class="ritekhed-social-network">
+                        <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook"></a></li>
+                        <li><a href="https://twitter.com/login" class="ritekhed-colorhover fab fa-twitter-square"></a></li>
+                        <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+                        <li><a href="https://plus.google.com/" class="ritekhed-colorhover fab fa-google-plus-square"></a></li>
+                    </ul> -->
+                    <ul class="ritekhed-info-list">
+                        <li><i class="fa fa-map-marker-alt"></i> <span>D-Tech Sports Num, Naroda, Ahmedabad</span></li>
+                        <li><i class="fa fa-phone"></i> <span>(+91) 8547632100</span></li>
+                        <li><i class="far fa-envelope"></i> <span><a href="mailto:name@email.com">PlanetSports17@gmail.com</a></span></li>
+                    </ul>
+                </aside>
+                <!-- Widget Footer About -->
+                <!-- Widget Featured News -->
+                <aside class="widget col-md-4 widget_featured_news">
+                    <div class="footer-widget-title"> <h2>Featured News</h2> </div>
+                    <ul>
+                        <li>
+                            <span>01</span>
+                            <h6><a href="#">Brendan Rodgers to raid his former club as he prepares to make a second bid for Celtic's Callum McGregor</a></h6>
+                            <time datetime="2008-02-14 20:00">23/02/2020</time>
+                        </li>
+                        <li>
+                            <span>02</span>
+                            <h6><a href="#">Brendan Rodgers to raid his former club as he prepares to make a second bid for Celtic's Callum McGregor</a></h6>
+                            <time datetime="2008-02-14 20:00">23/02/2020</time>
+                        </li>
+                        <li>
+                            <span>03</span>
+                            <h6><a href="#">Leicester are worried about losing James Maddison to Manchester United in the next transfer window, and are looking for backup.</a></h6>
+                            <time datetime="2008-02-14 20:00">23/02/2020</time>
+                        </li>
+                    </ul>
+                </aside>
+                <!-- Widget Featured News -->
+                <!-- Widget Gallery -->
+                <aside class="widget col-md-4 widget_gallery">
+                    <div class="footer-widget-title"> <h2>Flicker Photos</h2> </div>
+                    <ul>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-2.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-3.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-4.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-5.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-6.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-7.jpg' %}" alt=""></a></li>
+                        <li><a data-fancybox-group="group" href="{% static '/sportsfinal/css/extra-images/widget-gallery-1.jpg' %}" class="fancybox"><img src="{% static '/sportsfinal/css/extra-images/widget-gallery-8.jpg' %}" alt=""></a></li>
+                    </ul>
+                </aside>
+                <!-- Widget Gallery -->
+            </div>
+            <a href="#" class="ritekhed-back-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+    </div>
+    <!-- Footer Widget -->
+
+    <!-- CopyRight -->
+    <div class="ritekhed-copyright">
+        <div class="container">
+            <div class="row">
+                <aside class="col-md-6"><p>© 2020, All Right Reserved - by <a href="index-2.html">Planet Sports</a></p></aside>
+                <aside class="col-md-6">
+                    <ul class="ritekhed-copyright-link">
+                        <li><a href="#">Terms And Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <!-- CopyRight -->
+
+
+</footer>
+</body>
+<script src="{% static '/sportsfinal/js/jquery.js' %}"></script>
+<script src="{% static '/sportsfinal/js/popper.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/bootstrap.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/slick.slider.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/fancybox.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/isotope.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/smartmenus.min.js' %}"></script>
+<script src="{% static '/sportsfinal/js/progressbar.js' %}"></script>
+<script src="{% static '/sportsfinal/js/counter.js' %}"></script>
+<script src="{% static '/sportsfinal/js/jquery.countdown.min.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="{% static '/sportsfinal/js/functions.js' %}"></script>
+</html>
